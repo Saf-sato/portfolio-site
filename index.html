@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="・・・" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex,nofollow" />
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href=".." />
+    <link rel="apple-touch-icon-precomposed" href=".." />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="shared/reset.css" />
+    <link rel="stylesheet" href="shared/style.css" />
+    <link rel="stylesheet" href="shared/common.css" />
+
+    <title>title</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#">Your Name</a>
+
+        <button
+          id="menuButton"
+          class="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="siteDrawer"
+        >
+          <span class="sr-only">メニューを開閉する</span>
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <div id="overlay" class="overlay" hidden></div>
+
+    <nav
+      id="siteDrawer"
+      class="drawer"
+      aria-label="サイトメニュー"
+      aria-hidden="true"
+      hidden
+    >
+      <div class="drawer__title">Menu</div>
+
+      <ul class="drawer__nav">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://github.com/" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+
+      <div class="drawer__meta">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="hero__bg">
+          <img src="/img/hero.jpg" alt="" />
+        </div>
+        <div class="hero__title">
+          <h1>Fumi Sato</h1>
+          <p>Portfolio</p>
+        </div>
+      </section>
+      <div class="container">
+        <section id="self">
+          <div class="self__name">
+            <h3>佐藤 芙弥</h3>
+            <span>Sato Fumi</span>
+          </div>
+          <p class="self__p1">
+            仙台市在住。東北を中心に東日本を転々としてきました。フリーランス。<br />
+            営業、受付、コールセンターの経歴があります。
+          </p>
+          <br />
+          <p class="self__p2">
+            派手なことはできません。<br />でも、途中で投げ出さず、<br />
+            最後まで一緒に考えます。
+          </p>
+        </section>
+        <section id="works">
+          <h2>Works</h2>
+          <p>ここに作品一覧</p>
+          <ul>
+            <li class="works__list">
+              <div class="works__item">
+                <img src="/img/tentative1.png" alt="" />
+                <h3>HP①</h3>
+                <p>公式HP作成</p>
+              </div>
+            </li>
+
+            <li class="works__list">
+              <h3>バナー①</h3>
+              <div class="works__item">
+                <img src="img/800✖️495_A.png" alt="" />
+                <p>ふるさと納税バナー</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="tools">
+          <h2>作業ツール</h2>
+          <ul>
+            <li>
+              <p>HTML</p>
+            </li>
+            <li>
+              <p>CSS</p>
+            </li>
+            <li>
+              <p>Javascript</p>
+            </li>
+            <li>
+              <p>PHP</p>
+            </li>
+            <li>
+              <p>Git</p>
+            </li>
+            <li>
+              <p>Photoshop</p>
+            </li>
+            <li>
+              <p>Illustrator</p>
+            </li>
+            <li>
+              <p>Lightroom</p>
+            </li>
+          </ul>
+        </section>
+        <section id="contact">
+          <h2>お問い合わせ</h2>
+        </section>
+      </div>
+    </main>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="shared/main.js"></script>
+  </body>
+</html>
