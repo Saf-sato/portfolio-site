@@ -20,18 +20,11 @@
     <title>title</title>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="container header__inner">
-        <a class="brand" href="#">Your Name</a>
-
-        <button
-          id="menuButton"
-          class="menu-btn"
-          type="button"
-          aria-expanded="false"
-          aria-controls="siteDrawer"
-        >
-          <span class="sr-only">メニューを開閉する</span>
+        <a class="header__name" href="#">Your Name</a>
+        <button class="menu-btn" id="menuButton" aria-expanded="false">
           <span class="menu-icon" aria-hidden="true">
             <span></span><span></span><span></span>
           </span>
@@ -40,16 +33,8 @@
     </header>
 
     <div id="overlay" class="overlay" hidden></div>
-
-    <nav
-      id="siteDrawer"
-      class="drawer"
-      aria-label="サイトメニュー"
-      aria-hidden="true"
-      hidden
-    >
+    <nav id="siteDrawer" class="drawer" aria-hidden="true" hidden>
       <div class="drawer__title">Menu</div>
-
       <ul class="drawer__nav">
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
@@ -61,7 +46,6 @@
           >
         </li>
       </ul>
-
       <div class="drawer__meta">
         <a href="mailto:you@example.com">you@example.com</a>
         <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"

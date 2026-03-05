@@ -29,6 +29,11 @@ a:hover {
   --space-4: 32px;
   --space-5: 48px;
   --space-6: 64px;
+
+  /* --- drawer animation --- */
+  --drawer-w: min(78vw, 360px);
+  --dur: 240ms; /* アニメーション時間（240ms） */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 html {
@@ -47,6 +52,7 @@ section {
 .container {
   width: min(100% - (var(--gutter) * 2), var(--container));
   margin-inline: auto;
+  padding: 0 16px;
 }
 
 h1,
