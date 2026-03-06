@@ -210,8 +210,6 @@ works
 
 .works__inner {
   display: flex;
-}
-.works__inner {
   grid-template-columns: 320px minmax(0, 1fr);
   align-items: start;
 }
@@ -220,6 +218,8 @@ works
   gap: 24px;
   position: sticky;
   top: var(--space-8);
+  padding: 0 20px;
+  /* works__galleryとの幅を要調整 */
 }
 
 .works__title {
@@ -253,9 +253,15 @@ works
 }
 
 .works__content {
+  box-sizing: border-box;
+  border-style: solid;
 }
 .works__gallery {
-  margin-top: 8px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, auto);
+  column-gap: 1.5em;
+  gap: 30px;
 }
 
 .works__gallery li {
@@ -273,10 +279,13 @@ works
 }
 .works__content img {
   display: block;
-  width: 30%;
-  aspect-ratio: 4 / 5;
+  width: 100%;
   object-fit: cover;
   transition: transform 0.5s ease, opacity 0.4s ease;
+}
+.works__p {
+  display: block;
+  margin-top: 50px;
 }
 
 .works__content a:hover img {
@@ -319,7 +328,6 @@ works
   .works__content {
     gap: 40px;
     padding-top: 0;
-    border-top: none;
   }
 
   .works__names {
@@ -332,8 +340,8 @@ works
   }
 
   .works__gallery {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(minmax(0, 1fr));
+    gap: var(--space-6);
     margin-top: 0;
   }
 }
