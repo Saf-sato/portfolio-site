@@ -8,9 +8,9 @@ a {
   text-underline-offset: 0.2em;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 :root {
   /* --- Layout --- */
@@ -29,6 +29,8 @@ a:hover {
   --space-4: 32px;
   --space-5: 48px;
   --space-6: 64px;
+  --space-7: 80px;
+  --space-8: 96px;
 
   /* --- drawer animation --- */
   --drawer-w: min(78vw, 360px);
@@ -43,10 +45,11 @@ html {
 body {
   line-height: var(--lh-base);
   letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
 }
 
 section {
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-7);
 }
 
 .container {

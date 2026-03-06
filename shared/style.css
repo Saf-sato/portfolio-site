@@ -18,7 +18,7 @@ header
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: var(--space-6);
 }
 .header__name {
   font-weight: 600;
@@ -136,12 +136,14 @@ header
   color: rgba(0, 0, 0, 0.75);
 }
 
+/* .drawer__nav a:hover {
+  background: rgba(0, 0, 0, 0.04);
+} */
+
 /* Scroll lock */
 body.is-locked {
   overflow: hidden;
 }
-
-/* ! ______________ */
 
 /* ==================================
 hero
@@ -180,36 +182,161 @@ self
 
 .self__name {
   display: flex;
-  margin-bottom: var(--space-4);
+  margin-bottom: 32px;
 }
 .self__name span {
-  margin-left: var(--space-2);
+  margin-left: 16px;
 }
-.self__p1 .self__p2 {
-  letter-spacing: 0.13rem;
-}
+
+/* .self__p {
+  letter-spacing: 0.2rem;
+} */
+
 /* ==================================
 works
 ================================== */
+
+/* ========================================
+   works 追記
+======================================== */
+
 #works {
-  background-color: aqua;
+  padding: 80px 20px;
 }
-#works ul {
-  list-style: none;
+#works span {
+  display: block;
+  height: 150px;
 }
 
-.works__item {
+.works__inner {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+}
+.works__inner {
+  grid-template-columns: 320px minmax(0, 1fr);
+  align-items: start;
 }
 
-.works__item img {
-  max-height: 300px;
-  max-width: 300px;
+.works__intro {
+  gap: 24px;
+  position: sticky;
+  top: var(--space-8);
 }
 
-#works > 
+.works__title {
+  font-size: var(--space-5);
+  font-weight: 500;
+}
+
+.works__lead {
+  max-width: 30ch;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #444;
+}
+
+.works__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #111;
+  transition: opacity 0.3s ease;
+}
+
+.works__link:hover {
+  opacity: 0.6;
+}
+
+.works__content {
+}
+.works__gallery {
+  margin-top: 8px;
+}
+
+.works__gallery li {
+  overflow: hidden;
+}
+
+.works__content a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 14px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  transition: opacity 0.3s ease, padding-left 0.3s ease;
+}
+.works__content img {
+  display: block;
+  width: 30%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+}
+
+.works__content a:hover img {
+  transform: scale(1.03);
+  opacity: 0.92;
+}
+.works__content a:hover .works__p {
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+.works__content a:hover .works__p {
+  opacity: 0.7;
+}
+
+@media (min-width: 960px) {
+  .works {
+    padding: 120px 40px;
+  }
+
+  .works__inner {
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 88px;
+    align-items: start;
+  }
+
+  .works__intro {
+    gap: 24px;
+    position: sticky;
+    top: 40px;
+  }
+
+  .works__count {
+    margin-top: 12px;
+  }
+
+  .works__lead {
+    font-size: 15px;
+  }
+
+  .works__content {
+    gap: 40px;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .works__names {
+    max-width: 560px;
+  }
+
+  .works__names a {
+    padding: 18px 0;
+    font-size: 16px;
+  }
+
+  .works__gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 0;
+  }
+}
 
 /* ==================================
 tool

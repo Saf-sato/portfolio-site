@@ -49,9 +49,9 @@ a {
 }
 
 /* マウスでもキーボードでも「リンク」と分かるようにする */
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 a:focus-visible {
   outline: 2px solid currentColor;
