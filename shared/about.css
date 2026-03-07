@@ -1,0 +1,24 @@
+/* ==================================
+about
+================================== */
+
+#about {
+  margin-top: var(--space-7);
+}
+.about__title {
+  margin-bottom: var(--space-5);
+}
+
+.about__image {
+  display: flex;
+  justify-content: space-around;
+  max-height: max-content;
+}
+
+.about__image img {
+  position: relative;
+  width: 24.375vw;
+}
+.about__image img :nth-child(1) {
+  top: var(--space-5);
+}
