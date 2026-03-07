@@ -208,30 +208,37 @@ works
   height: 150px;
 }
 
+.works__title {
+  font-size: var(--space-4);
+  font-weight: 500;
+  padding: 0;
+  margin: 0 0 24px;
+  border: #444 1px solid;
+}
+
 .works__inner {
-  display: flex;
+  display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
   align-items: start;
+  border: #444 1px solid;
 }
 
 .works__intro {
-  gap: 24px;
   position: sticky;
   top: var(--space-8);
   padding: 0 20px;
+  border: #2846f4 1px solid;
   /* works__galleryとの幅を要調整 */
 }
 
-.works__title {
-  font-size: var(--space-5);
-  font-weight: 500;
-}
-
 .works__lead {
+  display: block;
   max-width: 30ch;
   font-size: 14px;
   line-height: 1.9;
   color: #444;
+  margin-top: var(--space-3);
+  border: #444 1px solid;
 }
 
 .works__link {
@@ -262,8 +269,8 @@ works
   grid-template-rows: repeat(4, auto);
   column-gap: 1.5em;
   gap: 30px;
+  padding-left: 70px;
 }
-
 .works__gallery li {
   overflow: hidden;
 }
@@ -272,7 +279,7 @@ works
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 14px 0;
+  padding: var(--space-5);
   font-size: 15px;
   line-height: 1.6;
   transition: opacity 0.3s ease, padding-left 0.3s ease;
@@ -299,51 +306,7 @@ works
 .works__content a:hover .works__p {
   opacity: 0.7;
 }
-
 @media (min-width: 960px) {
-  .works {
-    padding: 120px 40px;
-  }
-
-  .works__inner {
-    grid-template-columns: 320px minmax(0, 1fr);
-    gap: 88px;
-    align-items: start;
-  }
-
-  .works__intro {
-    gap: 24px;
-    position: sticky;
-    top: 40px;
-  }
-
-  .works__count {
-    margin-top: 12px;
-  }
-
-  .works__lead {
-    font-size: 15px;
-  }
-
-  .works__content {
-    gap: 40px;
-    padding-top: 0;
-  }
-
-  .works__names {
-    max-width: 560px;
-  }
-
-  .works__names a {
-    padding: 18px 0;
-    font-size: 16px;
-  }
-
-  .works__gallery {
-    grid-template-columns: repeat(minmax(0, 1fr));
-    gap: var(--space-6);
-    margin-top: 0;
-  }
 }
 
 /* ==================================
