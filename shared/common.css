@@ -58,6 +58,11 @@ section {
   padding: 0 16px;
 }
 
+[class$="__title"] {
+  font-weight: 100;
+  font-size: var(--space-4);
+}
+
 h1,
 h2,
 h3,
@@ -68,6 +73,7 @@ h4 {
 
 p {
   margin: 0;
+  letter-spacing: 0.05em;
 }
 
 * {
@@ -211,4 +217,22 @@ header
 /* Scroll lock */
 body.is-locked {
   overflow: hidden;
+}
+
+/* ==================================
+footer
+================================== */
+.footer {
+  display: block;
+  background: rgba(176, 235, 255, 0.166);
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 00px;
+}
+.footer__name {
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }

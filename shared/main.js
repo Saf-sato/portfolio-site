@@ -1,3 +1,6 @@
+/* ==================================
+header  --Hamburger + Drawer
+================================== */
 (() => {
   const btn = document.getElementById("menuButton");
   const drawer = document.getElementById("siteDrawer");
@@ -88,3 +91,13 @@
 
   window.addEventListener("resize", () => !isOpen() && close(true));
 })();
+
+/* ==================================
+hero  --simpleParallax CSS
+================================== */
+const hero = document.querySelector(".hero__bg img");
+
+window.addEventListener("scroll", () => {
+  const y = window.scrollY * 0.3;
+  hero.style.transform = `translateY(${y}px)`;
+});

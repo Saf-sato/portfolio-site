@@ -6,19 +6,31 @@ about
   margin-top: var(--space-7);
 }
 .about__title {
-  margin-bottom: var(--space-5);
+  font-weight: 100;
+  font-size: var(--space-4);
+  letter-spacing: 0.14em;
+  padding-bottom: 100px;
 }
 
 .about__image {
   display: flex;
   justify-content: space-around;
   max-height: max-content;
+  padding-bottom: 200px;
 }
 
 .about__image img {
   position: relative;
   width: 24.375vw;
 }
-.about__image img :nth-child(1) {
-  top: var(--space-5);
+
+.about__p {
+  /* position: relative; */
+  display: block;
+  top: calc(var(--space-6) + var(--space-8));
+  padding-bottom: 150px;
+}
+
+.about__p p {
+  line-height: 1.9; /*!! */
 }

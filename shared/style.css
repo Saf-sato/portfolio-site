@@ -2,22 +2,25 @@
 hero
 ================================== */
 #hero {
-  width: 100%;
-
   position: relative;
+  height: 75vh;
+  overflow: hidden;
 }
 
 .hero__bg {
-  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 .hero__bg img {
-  object-fit: cover;
   width: 100%;
-  height: 50vh;
+  height: 100%;
+  object-fit: cover;
+  object-position: calc(100% - 0px) calc(55% - 10px); /* hero画像の差替時：位置調整項目 */
 }
 
-.hero__title {
+.hero__name {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,18 +52,16 @@ self
 work
 ================================== */
 #work {
-  padding: 80px 20px;
-}
-#work span {
+  position: relative;
   display: block;
-  height: 150px;
+  top: var(--space-5);
+  padding: 0 20px;
 }
 
 .work__title {
   font-size: var(--space-4);
-  font-weight: 500;
   padding: 0;
-  margin: 0 0 24px;
+  letter-spacing: none;
   border: #444 1px solid;
 }
 
@@ -74,15 +75,16 @@ work
 .work__intro {
   position: sticky;
   top: var(--space-8);
-  padding: 0 20px;
   border: #2846f4 1px solid;
   /* work__galleryとの幅を要調整 */
+}
+.work__intro h2 {
+  padding-right: 30px;
 }
 
 .work__lead {
   display: block;
-  max-width: 30ch;
-  font-size: 14px;
+  font-size: calc(4px+ (var(--space-1)));
   line-height: 1.9;
   color: #444;
   margin-top: var(--space-3);
