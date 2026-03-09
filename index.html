@@ -14,9 +14,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="shared/reset.css" />
+    <link rel="stylesheet" href="shared/common.css" />
     <link rel="stylesheet" href="shared/style.css" />
     <link rel="stylesheet" href="shared/about.css" />
-    <link rel="stylesheet" href="shared/common.css" />
 
     <title>title</title>
   </head>
@@ -37,7 +37,7 @@
     <nav id="siteDrawer" class="drawer" aria-hidden="true" hidden>
       <div class="drawer__title">Menu</div>
       <ul class="drawer__nav">
-        <li><a href="#work">Work</a></li>
+        <li><a href="#works">Works</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -90,49 +90,49 @@
           </div>
         </section>
         <!-- work -->
-        <section id="work">
-          <div class="work__inner">
-            <div class="work__intro">
-              <h2 class="work__title">これまでデザインしたもの</h2>
-              <p class="work__lead">
+        <section id="works">
+          <div class="works__inner">
+            <div class="works__intro">
+              <h2 class="works__title">これまでデザインしたもの</h2>
+              <p class="works__lead">
                 Webサイト、広告バナー、印刷物の制作など、
                 お客様と一緒に作り上げたデザイン事例の一部を紹介します。
               </p>
-              <a class="work__link" href="#">デザイン事例</a>
+              <a class="works__link" href="#">デザイン事例</a>
             </div>
 
-            <ul class="work__gallery">
-              <div class="work__content">
+            <ul class="works__gallery">
+              <div class="works__content">
+                <a href="/hp/hp-1.html">
+                  <img src="/img/HP_1.png" alt="HP①のサムネイル" />
+                  <div class="works__p">
+                    <h3>定禅寺おおくら</h3>
+                    <p>HTML,CSS,Javascript,jQuery</p>
+                  </div>
+                </a>
+              </div>
+              <div class="works__content">
                 <a href="#">
                   <img src="/img/tentative1.png" alt="HP①のサムネイル" />
-                  <div class="work__p">
+                  <div class="works__p">
                     <h3>HPタイトル</h3>
                     <p>HTML,CSS</p>
                   </div>
                 </a>
               </div>
-              <div class="work__content">
+              <div class="works__content">
                 <a href="#">
                   <img src="/img/tentative1.png" alt="HP①のサムネイル" />
-                  <div class="work__p">
+                  <div class="works__p">
                     <h3>HPタイトル</h3>
                     <p>HTML,CSS</p>
                   </div>
                 </a>
               </div>
-              <div class="work__content">
+              <div class="works__content">
                 <a href="#">
                   <img src="/img/tentative1.png" alt="HP①のサムネイル" />
-                  <div class="work__p">
-                    <h3>HPタイトル</h3>
-                    <p>HTML,CSS</p>
-                  </div>
-                </a>
-              </div>
-              <div class="work__content">
-                <a href="#">
-                  <img src="/img/tentative1.png" alt="HP①のサムネイル" />
-                  <div class="work__p">
+                  <div class="works__p">
                     <h3>HPタイトル</h3>
                     <p>HTML,CSS</p>
                   </div>
@@ -198,12 +198,10 @@
       </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
-      <header class="header">
-        <div class="container footer__inner">
-          <a class="header__name" href="#">Top</a>
-        </div>
-      </header>
+    <footer id="footer">
+      <div class="container footer__inner">
+        <a class="header__name" href="#">Top</a>
+      </div>
     </footer>
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

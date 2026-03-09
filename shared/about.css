@@ -3,25 +3,27 @@ about
 ================================== */
 
 #about {
+  position: relative;
+  overflow: hidden;
   margin-top: var(--space-7);
 }
 .about__title {
-  font-weight: 100;
-  font-size: var(--space-4);
-  letter-spacing: 0.14em;
   padding-bottom: 100px;
+  border: solid 1px var(--guide-color);
 }
 
-.about__image {
+.about__bg {
   display: flex;
   justify-content: space-around;
   max-height: max-content;
   padding-bottom: 200px;
+  border: solid 1px var(--guide-color);
 }
 
-.about__image img {
+.about__bg img {
   position: relative;
   width: 24.375vw;
+  border: solid 1px var(--guide-color);
 }
 
 .about__p {
@@ -29,6 +31,7 @@ about
   display: block;
   top: calc(var(--space-6) + var(--space-8));
   padding-bottom: 150px;
+  border: solid 1px var(--guide-color);
 }
 
 .about__p p {

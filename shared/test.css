@@ -1,0 +1,1171 @@
+/*! CSS Used from: Embedded */
+img:is([sizes="auto" i], [sizes^="auto," i]) {
+  contain-intrinsic-size: 3000px 1500px;
+}
+/*! CSS Used from: https://cotonoha-design.com/wp2020/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3 ; media=all */
+@media all {
+  .wp-block-image img {
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+  ul {
+    box-sizing: border-box;
+  }
+  html :where(img[class*="wp-image-"]) {
+    height: auto;
+    max-width: 100%;
+  }
+  :where(figure) {
+    margin: 0 0 1em;
+  }
+}
+/*! CSS Used from: https://cotonoha-design.com/wp2020/wp-content/plugins/snow-monkey-forms/dist/css/fallback.css?ver=1763082731 ; media=all */
+@media all {
+  * {
+    --_font-size: calc(
+      var(--_harmonic-sequence-base) /
+        (var(--_harmonic-sequence-base) - var(--_font-size-level)) * 1rem
+    );
+    --_line-height: clamp(
+      1.1,
+      var(--_line-height-slope) *
+        calc(
+          var(--_harmonic-sequence-base) /
+            (var(--_harmonic-sequence-base) - var(--_font-size-level))
+        ) + 1 + 2 * var(--_half-leading) + -1 * var(--_line-height-slope),
+      2 * var(--_half-leading) + 1
+    );
+    --_fluid-font-size: clamp(
+      1rem *
+        calc(
+          var(--_min-harmonic-sequence-base) /
+            (var(--_min-harmonic-sequence-base) - var(--_font-size-level))
+        ),
+      calc(
+        (
+            var(--_max-harmonic-sequence-base) /
+              (var(--_max-harmonic-sequence-base) - var(--_font-size-level)) /
+              57.5 * -22.5 - var(--_min-harmonic-sequence-base) /
+              (var(--_min-harmonic-sequence-base) - var(--_font-size-level)) /
+              57.5 * -22.5 + var(--_min-harmonic-sequence-base) /
+              (var(--_min-harmonic-sequence-base) - var(--_font-size-level))
+          ) * 1rem +
+          (
+            var(--_max-harmonic-sequence-base) /
+              (var(--_max-harmonic-sequence-base) - var(--_font-size-level)) /
+              57.5 - var(--_min-harmonic-sequence-base) /
+              (var(--_min-harmonic-sequence-base) - var(--_font-size-level)) /
+              57.5
+          ) * 100vw
+      ),
+      1rem *
+        calc(
+          var(--_max-harmonic-sequence-base) /
+            (var(--_max-harmonic-sequence-base) - var(--_font-size-level))
+        )
+    );
+    box-sizing: border-box;
+  }
+  :after,
+  :before {
+    box-sizing: inherit;
+  }
+}
+/*! CSS Used from: https://cotonoha-design.com/wp2020/wp-content/themes/jinr/style.css?ver=6.8.3 ; media=all */
+@media all {
+  h1,
+  ul,
+  div,
+  span,
+  img,
+  a,
+  article,
+  figure,
+  section,
+  footer,
+  header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    word-break: break-word;
+  }
+  ul {
+    list-style: none;
+    list-style-type: none;
+  }
+  a {
+    color: inherit;
+  }
+  img {
+    display: block;
+  }
+  .d--display-none {
+    display: none !important;
+  }
+  .t--main-width {
+    max-width: 1120px;
+  }
+  #wrapper.d--jpf-default .d--bold {
+    font-weight: 600;
+  }
+  @media (max-width: 551px) {
+    #wrapper.d--jpf-default .d--bold-sp {
+      font-weight: 600;
+    }
+  }
+  .ef {
+    font-feature-settings: "palt";
+    letter-spacing: 1px;
+  }
+  [class*=" jin-ifont-"] {
+    font-family: "jin-icons" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    will-change: transform;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  [class*=" jin-ifont-"]:before {
+    font-size: 1em;
+    display: inline-block;
+    will-change: transform;
+  }
+  .jin-icons {
+    display: inline-block;
+  }
+  .jif {
+    font-size: 0.96em;
+  }
+  .jin-ifont-archive:before {
+    content: "\e901";
+  }
+  .jin-ifont-copy:before {
+    content: "\e90e";
+  }
+  .jin-ifont-facebook:before {
+    content: "\e912";
+  }
+  .jin-ifont-instagram:before {
+    content: "\e919";
+  }
+  .jin-ifont-line:before {
+    content: "\e91b";
+  }
+  .jin-ifont-twitter:before {
+    content: "\e92d";
+  }
+  .jin-ifont-calendar:before {
+    content: "\e93f";
+  }
+  a {
+    text-decoration: none;
+    transition: all 0.4s;
+    will-change: transform;
+    transition-timing-function: ease;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  #postContent {
+    letter-spacing: 0.12rem;
+  }
+  #postContent li a {
+    text-decoration: underline;
+    text-underline-offset: 0.36rem;
+  }
+  #postContent .jinr-list {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0 2rem;
+    margin-top: 3.3rem;
+    margin-bottom: 3.3rem;
+  }
+  #postContent .jinr-list li {
+    position: relative;
+    margin: 9px 0;
+    line-height: 2.4rem;
+  }
+  @media (min-width: 552px) {
+    #postContent .jinr-list li {
+      line-height: 2.7rem;
+    }
+  }
+  @media (min-width: 552px) {
+    #postContent ul.jinr-list {
+      padding: 0 3rem;
+    }
+  }
+  #postContent ul.jinr-list li {
+    counter-reset: item;
+    padding-left: 1.65rem;
+  }
+  #postContent ul.jinr-list li::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    line-height: 0;
+    left: 0;
+    top: 0.85rem;
+  }
+  @media (min-width: 552px) {
+    #postContent ul.jinr-list li::after {
+      top: 1rem;
+    }
+  }
+  @media (min-width: 782px) {
+    #postContent.d--font-pc-s-size {
+      font-size: 1.45rem;
+      line-height: 2.1;
+    }
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    #postContent.d--font-sp-s-size {
+      font-size: 1.5rem;
+      line-height: 1.8;
+    }
+  }
+  @media (max-width: 551px) {
+    #postContent.d--font-sp-s-size {
+      font-size: 1.45rem;
+      line-height: 1.75;
+    }
+    #postContent.d--font-sp-s-size .jinr-list li {
+      line-height: 1.4;
+    }
+  }
+  #postContent .wp-block-image {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 1.65rem;
+    margin-bottom: 1.65rem;
+  }
+  @media (min-width: 552px) {
+    #postContent .wp-block-image {
+      margin-top: 3.3rem;
+      margin-bottom: 3.3rem;
+    }
+  }
+  #postContent .b--jinr-box .c--simple-box-inner .jinr-list {
+    padding: 0 0.4rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.95em;
+  }
+  @media (min-width: 782px) {
+    #postContent .b--jinr-box .c--simple-box-inner .jinr-list {
+      margin-top: 2.4rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+  #mainContentInner {
+    margin: 0 auto;
+  }
+  @media (max-width: 551px) {
+    #mainContentInner {
+      overflow: hidden;
+    }
+  }
+  @media (min-width: 961px) {
+    #mainContentInner {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  #jinrArticle {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+  }
+  #postHeader {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+  }
+  #postHeaderInner {
+    width: 100%;
+  }
+  #postHeaderInner,
+  #postContent {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 551px) {
+    #postHeaderInner,
+    #postContent {
+      max-width: 100% !important;
+    }
+  }
+  #jinrPostTitle {
+    width: 100%;
+    font-feature-settings: "palt";
+    letter-spacing: 0.1rem;
+    line-height: 1.4;
+    margin-top: clamp(12px, 2vw, 15px);
+    font-size: 1.96rem;
+  }
+  @media (min-width: 552px) {
+    #jinrPostTitle {
+      letter-spacing: 0.3rem;
+      font-size: clamp(2.4rem, 3vw, 2.85rem);
+      font-weight: 500;
+    }
+  }
+  @media (max-width: 551px) {
+    .d--jpf-default #jinrPostTitle {
+      font-weight: 600;
+      letter-spacing: 0.15rem;
+    }
+  }
+  #jinrPostMeta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 200;
+  }
+  @media (min-width: 552px) {
+    #jinrPostMeta {
+      font-size: 1.2rem;
+    }
+  }
+  #jinrPostMeta .a--post-cat {
+    letter-spacing: clamp(0.06rem, 0.6vw, 0.09rem);
+  }
+  #jinrPostMeta .a--post-cat a {
+    display: inline-block;
+  }
+  #jinrPostMeta .c--jinr-post-date {
+    display: flex;
+    opacity: 0.5;
+    letter-spacing: 0.09rem;
+    font-size: 1.05rem;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  @media (min-width: 552px) {
+    #jinrPostMeta .c--jinr-post-date {
+      letter-spacing: 0.12rem;
+      font-size: 1.2rem;
+    }
+  }
+  #jinrPostMeta .c--jinr-post-date + .a--post-cat {
+    margin-left: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    max-height: 2.4em;
+  }
+  @media (min-width: 552px) {
+    #jinrPostMeta .c--jinr-post-date + .a--post-cat {
+      margin-left: 18px;
+    }
+  }
+  #jinrPostMeta .jif {
+    margin-right: 3px;
+  }
+  @media (min-width: 552px) {
+    #jinrPostMeta .jif {
+      margin-right: 6px;
+    }
+  }
+  #jinrPostThumb {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  #jinrPostThumb img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #postContent {
+    padding-bottom: 30px;
+    margin-top: clamp(24px, 3.9vw, 45px);
+  }
+  .d--article-width-680 {
+    max-width: 680px;
+  }
+  .single.post-template-default .d--main-style-noframe #mainContentInner,
+  .single[class*="-template-default"] .d--main-style-noframe #mainContentInner {
+    padding-top: clamp(15px, 4vw, 45px);
+    padding-bottom: 18px;
+  }
+  @media (max-width: 551px) {
+    .single.post-template-default .d--main-style-noframe #mainContentInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe
+      #mainContentInner {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    .single.post-template-default .d--main-style-noframe #mainContentInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe
+      #mainContentInner {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  @media (min-width: 782px) {
+    .single.post-template-default .d--main-style-noframe #mainContentInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe
+      #mainContentInner {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media (min-width: 961px) {
+    .single.post-template-default .d--main-style-noframe #mainContentInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe
+      #mainContentInner {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media (min-width: 1240px) {
+    .single.post-template-default .d--main-style-noframe #mainContentInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe
+      #mainContentInner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  @media (min-width: 1340px) {
+    .single.post-template-default .d--main-style-noframe #mainContentInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe
+      #mainContentInner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  @media (min-width: 552px) {
+    .single.post-template-default .d--main-style-noframe #mainContentInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe
+      #mainContentInner {
+      padding-bottom: clamp(24px, 6vw, 60px);
+    }
+  }
+  @media (max-width: 551px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postContent,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postContent {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postContent,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postContent {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 782px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postContent,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postContent {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 961px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postContent,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postContent {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 1240px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postContent,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postContent {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  @media (min-width: 1340px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postContent,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postContent {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  @media (max-width: 551px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 782px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 961px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 1240px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  @media (min-width: 1340px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column
+      #postHeaderInner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .single.post-template-default
+    .d--main-style-noframe.d--one-column.d--article-style1
+    #postHeaderInner,
+  .single[class*="-template-default"]
+    .d--main-style-noframe.d--one-column.d--article-style1
+    #postHeaderInner {
+    padding-bottom: clamp(15px, 3vw, 21px);
+  }
+  @media (max-width: 551px) {
+    .single.post-template-default
+      .d--main-style-noframe.d--one-column.d--article-style1
+      #jinrPostMeta,
+    .single[class*="-template-default"]
+      .d--main-style-noframe.d--one-column.d--article-style1
+      #jinrPostMeta {
+      padding-bottom: 3px;
+    }
+  }
+  .d--animation-general-on #jinrPostThumb {
+    opacity: 0;
+    animation: fadeDelay 1.5s ease;
+    animation-fill-mode: forwards;
+  }
+}
+/*! CSS Used from: Embedded */
+.jinr-article a:not([class]) {
+  color: #221f1c;
+}
+#wrapper a:not([class]):hover {
+  color: #a0b2c0;
+}
+#mainContent .a--post-cat a,
+#mainContent .d--profile-author.d--theme-color a.a--sns-item-link {
+  color: #7f7e7d;
+}
+#snsShareBottom.d--sns-share-color-solid,
+ul.jinr-list li::after {
+  background-color: #7f7e7d;
+}
+.jinr-profile-label::before,
+.jinr-profile-label span {
+  background-color: rgba(127, 126, 125, 1);
+}
+#jinrArticle {
+  background-color: #fff;
+}
+.d--simple-box11 {
+  border-color: #d0d0d0;
+}
+.d--simple-box11::before,
+.d--simple-box11::after {
+  border-color: #d0d0d0;
+}
+/*! CSS Used from: Embedded */
+#postContent a {
+  text-decoration: underline;
+}
+#postContent ul.jinr-list li::after {
+  background-color: #adc1ca;
+}
+#postContent ul.jinr-list li {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  margin: 5px 0;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  #postContent ul.jinr-list li {
+    margin: 15px 0;
+  }
+}
+.a--post-cat,
+.c--entry-title,
+.entry-date {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 300;
+}
+.c--entry-title {
+  font-size: 28px !important;
+  letter-spacing: 4px !important;
+  font-weight: normal !important;
+  margin-top: 12px !important;
+}
+#postHeaderInner {
+  padding-left: 2px !important;
+}
+#jinrPostMeta {
+  padding-left: 2.5px !important;
+}
+.a--profile-introduction {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 300;
+}
+.jinr-profile-label {
+  margin-top: 80px !important;
+}
+#postContent.d--font-sp-s-size .jinr-list li {
+  line-height: 1.8;
+  margin: 7px;
+}
+ul.jinr-list {
+  padding: 0px !important;
+}
+@media (max-width: 768px) {
+  #jinrArticle {
+    margin-top: 30px;
+  }
+  .c--entry-title {
+    font-size: 22px !important;
+  }
+}
+.a--profile-name,
+.a--profile-job {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif !important;
+  font-weight: normal !important;
+}
+/*! CSS Used from: https://cotonoha-design.com/wp2020/wp-content/themes/jinr/style-footer.css?ver=6.8.3 ; media=all */
+@media all {
+  #snsShareBottom {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 60px;
+  }
+  @media (max-width: 551px) {
+    #snsShareBottom {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    #snsShareBottom {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @media (min-width: 782px) {
+    #snsShareBottom {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media (min-width: 961px) {
+    #snsShareBottom {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media (min-width: 1240px) {
+    #snsShareBottom {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  @media (min-width: 1340px) {
+    #snsShareBottom {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  #snsShareBottomInner {
+    max-width: 680px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .o--sns-share-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #snsShareLabel {
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    line-height: 30px;
+    width: 100px;
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    #snsShareLabel {
+      letter-spacing: 0.15rem;
+      font-size: 1.2rem;
+      width: 72px;
+    }
+  }
+  @media (min-width: 782px) {
+    #snsShareLabel {
+      width: 126px;
+      font-size: 1.4rem;
+      letter-spacing: 0.3rem;
+    }
+  }
+  #snsShareLabel::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    opacity: 0.45;
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    #snsShareLabel::before {
+      right: 11px;
+    }
+  }
+  @media (min-width: 782px) {
+    #snsShareLabel::before {
+      right: 31px;
+    }
+  }
+  @media (min-width: 782px) {
+    .d--article-width-680 + #postFooter #snsShareLabel {
+      width: 117px;
+    }
+  }
+  .d--main-style-noframe #snsShareBottom {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .d--main-style-noframe .d--article-width-680 + #postFooter #snsShareBottom {
+    max-width: 680px;
+  }
+  .c--sns-share-item {
+    text-align: center;
+  }
+  .c--sns-share-item a {
+    display: flex;
+    align-items: center;
+  }
+  .c--sns-share-item .a--sns-label {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-left: 6px;
+    line-height: 0;
+  }
+  @media (min-width: 782px) {
+    .c--sns-share-item .a--sns-label {
+      margin-left: 9px;
+      font-size: 1.2rem;
+    }
+  }
+  .c--sns-share-item:first-child {
+    margin-left: 0;
+  }
+  .d--sns-share-color-solid #snsShareLabel {
+    color: #fff;
+  }
+  .d--sns-share-color-solid #snsShareLabel::before {
+    background-color: #fff;
+  }
+  .d--sns-share-color-solid .c--sns-share-item .jif::before,
+  .d--sns-share-color-solid .c--sns-share-item .a--sns-label {
+    color: #fff !important;
+  }
+  .d--sns-share-design1 .c--sns-share-item {
+    padding: 0 clamp(12px, 2vw, 15px);
+  }
+  .d--sns-share-design1 .c--sns-share-item .a--sns-label {
+    letter-spacing: 0.09rem;
+  }
+  @media (max-width: 551px) {
+    .d--sns-share-design1 .c--sns-share-item .a--sns-label {
+      display: none;
+    }
+  }
+  @media (min-width: 782px) {
+    .d--sns-share-design1 .c--sns-share-item .a--sns-label {
+      letter-spacing: 0.15rem;
+    }
+  }
+  .d--sns-share-design1 .c--sns-share-item .jif::before {
+    font-size: 1.96rem;
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    .d--sns-share-design1 .c--sns-share-item .jif::before {
+      font-size: 1.6rem;
+    }
+  }
+  @media (min-width: 782px) {
+    .d--sns-share-design1 .c--sns-share-item .jif::before {
+      font-size: 1.8rem;
+    }
+  }
+  #jinrCopyUrl {
+    cursor: pointer;
+  }
+  .b--jinr-box {
+    display: block;
+    margin: 1.65rem auto;
+    padding: 0 2.2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  @media (min-width: 552px) {
+    .b--jinr-box {
+      margin: 4.2rem auto;
+      padding: 0 2.7rem;
+      width: calc(100% - 3.3rem * 1.5);
+    }
+  }
+  .d--simple-box11 {
+    position: relative;
+    border-style: solid;
+  }
+  .d--simple-box11::before,
+  .d--simple-box11::after {
+    position: absolute;
+    content: "";
+    height: calc(100% + 12px);
+    top: -6px;
+  }
+  .d--simple-box11::before {
+    border-left-style: solid;
+    left: 6px;
+  }
+  .d--simple-box11::after {
+    border-right-style: solid;
+    right: 6px;
+  }
+  .d--simple-box11 {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+  .d--simple-box11::before {
+    border-left-width: 1px;
+  }
+  .d--simple-box11::after {
+    border-right-width: 1px;
+  }
+  .b--jinr-profile {
+    margin: 1.65rem auto;
+    overflow: hidden;
+  }
+  @media (min-width: 552px) {
+    .b--jinr-profile {
+      margin: 3.3rem auto;
+    }
+  }
+  .b--jinr-profile .a--profile-introduction {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 100%;
+  }
+  .o--profile-contents {
+    line-height: 1.6;
+  }
+  .o--profile-contents .a--profile-image {
+    flex-shrink: 0;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    margin-right: 27px;
+    border-radius: 100px;
+  }
+  .o--profile-contents .a--profile-image img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+  .o--profile-contents .a--profile-name {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.2;
+  }
+  .o--profile-contents .a--profile-job {
+    font-size: 1rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.45;
+  }
+  .o--profile-contents .c--profile-sns-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .o--profile-contents .a--sns-item-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.25s;
+    will-change: transform;
+    transition-timing-function: ease;
+  }
+  .o--profile-contents .a--sns-item-link:last-child {
+    margin-right: 0;
+  }
+  .o--profile-contents .a--sns-item-link .jin-icons {
+    font-size: 1.6rem;
+    margin-right: 5px;
+  }
+  @media (max-width: 551px) {
+    .o--profile-contents .a--sns-item-link .jin-icons {
+      margin-right: 0px;
+    }
+  }
+  @media screen and (min-width: 552px) and (max-width: 781px) {
+    .o--profile-contents .a--sns-item-link .jin-icons {
+      margin-right: 0px;
+    }
+  }
+  .o--profile-contents .a--sns-item-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .d--profile-author {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 200px;
+    margin-bottom: 0;
+  }
+  @media (min-width: 552px) {
+    .d--profile-author {
+      padding: 0 24px;
+    }
+  }
+  .d--profile-author .o--profile-contents {
+    display: flex;
+    padding: 0 6px;
+    margin-top: 33px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @media (min-width: 552px) {
+    .d--profile-author .o--profile-contents {
+      padding: 0;
+      margin-top: 27px;
+    }
+  }
+  .d--profile-author .c--profile-meta {
+    position: relative;
+  }
+  @media (max-width: 551px) {
+    .d--profile-author .c--profile-meta {
+      max-width: calc(100% - 90px);
+    }
+  }
+  .d--profile-author .o--profile-sns {
+    width: auto;
+    padding: 15px 0px 0px;
+  }
+  @media (max-width: 551px) {
+    .d--profile-author .o--profile-sns {
+      padding: 12px 0px 0px;
+    }
+  }
+  .d--profile-author .c--profile-sns-item {
+    justify-content: flex-start;
+  }
+  .d--profile-author .a--profile-image {
+    margin-right: 15px;
+    width: 75px;
+    height: 75px;
+  }
+  @media (min-width: 552px) {
+    .d--profile-author .a--profile-image {
+      margin-right: 21px;
+    }
+  }
+  .d--profile-author .a--profile-introduction {
+    margin-top: 18px;
+    width: calc(100% - 9px);
+    margin-left: auto;
+  }
+  @media (max-width: 551px) {
+    .d--profile-author .a--profile-introduction {
+      margin-right: auto;
+    }
+  }
+  @media (min-width: 552px) {
+    .d--profile-author .a--profile-introduction {
+      width: calc(100% - 96px);
+    }
+  }
+  .d--profile-author .a--sns-item-link {
+    margin-right: 6px;
+  }
+  @media (max-width: 551px) {
+    .d--profile-author .a--sns-item-link {
+      margin-right: 15px;
+    }
+  }
+  .d--profile-author .a--sns-item-link span {
+    display: none;
+  }
+  @media (max-width: 551px) {
+    .d--profile-author .a--sns-item-link .jin-icons {
+      font-size: 1.8rem;
+    }
+  }
+  .d--profile-author .a--profile-job {
+    color: #aaa;
+    margin-top: 6px;
+  }
+  .jinr-profile-label {
+    position: relative;
+    margin-top: 3.3rem;
+  }
+  @media (min-width: 552px) {
+    .jinr-profile-label {
+      margin-top: 6rem;
+    }
+  }
+  .jinr-profile-label span {
+    position: absolute;
+    right: 9px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 6px 8px;
+    letter-spacing: 0.03rem;
+    line-height: 1.4;
+  }
+  @media (min-width: 552px) {
+    .jinr-profile-label span {
+      font-size: 1.2rem;
+      right: 24px;
+      padding: 9px 15px;
+    }
+  }
+  .jinr-profile-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+  }
+  .jinr-profile-label + .b--jinr-profile {
+    margin-top: 21px;
+  }
+  @media (min-width: 552px) {
+    .jinr-profile-label + .b--jinr-profile {
+      margin-top: 57px;
+    }
+  }
+}
+/*! CSS Used keyframes */
+@keyframes fadeDelay {
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "jin-icons";
+  src: url("https://cotonoha-design.com/wp2020/wp-content/themes/jinr/lib/font/jin-icons/jin-icons.woff?c16tcv")
+      format("woff"),
+    url("https://cotonoha-design.com/wp2020/wp-content/themes/jinr/lib/font/jin-icons/jin-icons.svg?c16tcv#jin-icons")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

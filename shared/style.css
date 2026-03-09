@@ -3,7 +3,7 @@ hero
 ================================== */
 #hero {
   position: relative;
-  height: 75vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -32,8 +32,9 @@ hero
 self
 ================================== */
 #self {
-  width: 100%;
   position: relative;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .self__name {
@@ -55,43 +56,41 @@ work
   position: relative;
   display: block;
   top: var(--space-5);
-  padding: 0 20px;
 }
 
-.work__title {
-  font-size: var(--space-4);
+.works__title {
   padding: 0;
   letter-spacing: none;
-  border: #444 1px solid;
+  border: solid 1px var(--guide-color);
 }
 
-.work__inner {
+.works__inner {
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
   align-items: start;
-  border: #444 1px solid;
+  border: solid 1px var(--guide-color);
 }
 
-.work__intro {
+.works__intro {
   position: sticky;
   top: var(--space-8);
-  border: #2846f4 1px solid;
-  /* work__galleryとの幅を要調整 */
+  border: solid 1px var(--guide-color);
+  /* works__galleryとの幅を要調整 */
 }
-.work__intro h2 {
+.works__intro h2 {
   padding-right: 30px;
 }
 
-.work__lead {
+.works__lead {
   display: block;
   font-size: calc(4px+ (var(--space-1)));
   line-height: 1.9;
   color: #444;
   margin-top: var(--space-3);
-  border: #444 1px solid;
+  border: solid 1px var(--guide-color);
 }
 
-.work__link {
+.works__link {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -105,15 +104,15 @@ work
   transition: opacity 0.3s ease;
 }
 
-.work__link:hover {
+.works__link:hover {
   opacity: 0.6;
 }
 
-.work__content {
+.works__content {
   box-sizing: border-box;
   border-style: solid;
 }
-.work__gallery {
+.works__gallery {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(4, auto);
@@ -121,11 +120,11 @@ work
   gap: 30px;
   padding-left: 70px;
 }
-.work__gallery li {
+.works__gallery li {
   overflow: hidden;
 }
 
-.work__content a {
+.works__content a {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -134,26 +133,26 @@ work
   line-height: 1.6;
   transition: opacity 0.3s ease, padding-left 0.3s ease;
 }
-.work__content img {
+.works__content img {
   display: block;
   width: 100%;
   object-fit: cover;
   transition: transform 0.5s ease, opacity 0.4s ease;
 }
-.work__p {
+.works__p {
   display: block;
   margin-top: 50px;
 }
 
-.work__content a:hover img {
-  transform: scale(1.03);
+.works__content a:hover img {
+  transform: scale(1.013);
   opacity: 0.92;
 }
-.work__content a:hover .work__p {
+.works__content a:hover .works__p {
   color: inherit;
   transition: opacity 0.3s ease;
 }
-.work__content a:hover .work__p {
+.works__content a:hover .works__p {
   opacity: 0.7;
 }
 @media (min-width: 960px) {
@@ -171,4 +170,73 @@ contact
 ================================== */
 #contact {
   background-color: greenyellow;
+}
+
+/* ==================================
+work --hp
+================================== */
+#work {
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--space-7);
+}
+
+/* --- overview --- */
+.work__wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--space-7);
+  margin-bottom: var(--space-3);
+  border: solid 1px var(--guide-color);
+}
+
+.work__left img {
+  display: block;
+  margin-inline: auto;
+}
+.work__left h2 {
+  text-align: center;
+}
+.work__left span {
+  display: block;
+  height: var(--space-5);
+  border: solid 1px var(--guide-color);
+}
+
+.work__right dl {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  max-width: 600px;
+  margin: var(--space-5) auto;
+}
+
+.work__right dt,
+.work__right dd {
+  margin: 0;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.work__right dt {
+  font-weight: 600;
+  line-height: 1.6;
+}
+.work__right dd {
+  line-height: 1.8;
+}
+
+.work__right p {
+  margin: 0 auto;
+  margin-bottom: var(--space-3);
+  line-height: 1.9; /*!! */
+}
+
+/* ==================================
+work --comment
+================================== */
+#comment {
+}
+
+.comment__wrapper {
+  display: block;
+  border: solid 1px var(--guide-color);
 }
