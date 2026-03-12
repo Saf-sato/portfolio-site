@@ -1,0 +1,153 @@
+/*! CSS Used from: https://www.mitonedesign.jp/_next/static/css/8c24de39b4c134af.css */
+.c-text07 {
+  letter-spacing: 0.1em;
+}
+.c-text07 {
+  line-height: 2;
+}
+.-thin.c-text07 {
+  line-height: 1.75;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+figure {
+  margin: 0;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: bottom;
+}
+figure {
+  display: block;
+}
+img {
+  vertical-align: bottom;
+  height: auto;
+  max-width: 100%;
+  min-height: 1px;
+}
+.c-text07 {
+  font-size: min(calc(0.0525210084vw + 1.3282563025rem), 1.4rem);
+}
+::placeholder {
+  color: #aaa;
+}
+.c-button01 {
+  display: flex;
+  align-items: center;
+}
+.-center.c-button01 {
+  justify-content: center;
+}
+.c-button01 a {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding-left: 80px;
+}
+.c-button01 a,
+.c-button01 a .text {
+  position: relative;
+}
+.c-button01 a:before {
+  content: "";
+  display: flex;
+  padding-left: 30px;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 9999px;
+  top: 0;
+  left: 0;
+  border: 1px solid #888;
+}
+.c-button01 a:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  top: 30px;
+  position: absolute;
+  left: 30px;
+  background-color: #312d2b;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+}
+.c-button01 .c-illust {
+  position: absolute;
+  width: 64px;
+  bottom: -32px;
+  right: 16px;
+  opacity: 0;
+  transform: translateX(10%);
+  transition: opacity 0.4s, transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.u-mt60 {
+  margin-top: min(3.1512605042vw + 76.9537815126px, 120px) !important;
+}
+@media (-o-min-device-pixel-ratio: 1.5),
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 3840px) and (min-width: 320px) and (min-device-pixel-ratio: 1.5) {
+  .c-button01 a:before {
+    border: 0.5px solid #888;
+  }
+}
+@media only screen and (max-width: 413px) {
+  .c-text07 {
+    font-size: min(calc(1.2820512821vw + 0.8192307692rem), 1.35rem);
+  }
+}
+@media (hover: hover) {
+  :focus {
+    outline: none;
+  }
+  .c-button01 a {
+    padding-right: 90px;
+    margin-right: -90px;
+    transition: 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .c-button01 a:before {
+    transition: box-shadow 0.4s cubic-bezier(0.77, 0, 0.175, 1),
+      width 0.4s cubic-bezier(0.77, 0, 0.175, 1),
+      border-color 0.4s cubic-bezier(0.77, 0, 0.175, 1),
+      background-color 0.4s cubic-bezier(0.77, 0, 0.175, 1),
+      transform 1.6s cubic-bezier(0.77, 0, 0.175, 1), opacity 1.6s;
+  }
+  .c-button01 a .text {
+    transition: margin-left 0.4s cubic-bezier(0.77, 0, 0.175, 1),
+      opacity 0.8s 1.6s;
+  }
+  .c-button01 a:focus,
+  .c-button01 a:hover {
+    margin-right: 0;
+  }
+  .c-button01 a:focus .text,
+  .c-button01 a:hover .text {
+    margin-left: 15px;
+  }
+  .c-button01 a:focus:before,
+  .c-button01 a:hover:before {
+    box-shadow: 0 0 min(1.6806722689vw + 25.0420168067px, 48px) 0
+      rgba(0, 0, 0, 0.15);
+    width: 100%;
+    border-color: #fff;
+    background-color: #fff;
+  }
+  .c-button01 a:focus .c-illust,
+  .c-button01 a:hover .c-illust {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.4s 0.2s,
+      transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+  }
+}

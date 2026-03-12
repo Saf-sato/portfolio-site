@@ -1,0 +1,138 @@
+/* ==================================
+work --hp
+================================== */
+#work {
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--space-7);
+}
+#work span {
+  display: block;
+  height: var(--space-6);
+  border: solid 1px var(--guide-color);
+}
+
+.work__title {
+  margin-bottom: var(--space-4);
+}
+
+/* --- overview --- */
+.work__wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--space-7);
+  margin-bottom: var(--space-3);
+  border: solid 1px var(--guide-color);
+}
+
+.work__left img {
+  display: block;
+  margin-inline: auto;
+}
+.work__left h2 {
+  text-align: center;
+}
+
+.work__right {
+  min-width: 400px;
+  padding-right: var(--space-3);
+}
+.work__right dl {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  margin: 0 auto;
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.work__right dt,
+.work__right dd {
+  margin: 0;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.work__right dt {
+  font-weight: 600;
+  line-height: 1.6;
+  padding-left: var(--space-2);
+}
+.work__right dd {
+  line-height: 1.8;
+}
+
+.work__right p {
+  margin: 0 auto;
+  margin-bottom: var(--space-3);
+  line-height: 1.9; /*!! */
+}
+
+.work__category {
+  font-size: 14px;
+  color: rgb(118, 118, 118);
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+  padding-left: var(--space-2);
+  opacity: 0.7;
+}
+
+/* ==================================
+work --comment
+================================== */
+
+.comment__wrapper {
+  display: block;
+  border: solid 1px var(--guide-color);
+}
+.comment__list {
+  display: flex;
+  list-style: none;
+  margin-bottom: var(--space-5);
+}
+.comment__list li {
+  padding: var(--space-1);
+  margin-left: var(--space-2);
+  border: solid 1px;
+  border-radius: 10%;
+}
+
+.comment__url {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+  margin-left: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.comment__txt {
+}
+
+/* ==================================
+back
+================================== */
+
+.back__button {
+  display: flex;
+  inline-size: max-content;
+  margin: 0 auto;
+  align-items: center;
+  gap: var(--space-1);
+  bottom: var(--space-7);
+  margin-bottom: var(--space-7);
+}
+
+.back__button:hover {
+  opacity: 0.7;
+}
+
+.back__button__arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.back__button:hover .back__button__arrow {
+  transform: translateX(-4px);
+}
