@@ -109,30 +109,3 @@ work --comment
 
 .comment__txt {
 }
-
-/* ==================================
-back
-================================== */
-
-.back__button {
-  display: flex;
-  inline-size: max-content;
-  margin: 0 auto;
-  align-items: center;
-  gap: var(--space-1);
-  bottom: var(--space-7);
-  margin-bottom: var(--space-7);
-}
-
-.back__button:hover {
-  opacity: 0.7;
-}
-
-.back__button__arrow {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.back__button:hover .back__button__arrow {
-  transform: translateX(-4px);
-}

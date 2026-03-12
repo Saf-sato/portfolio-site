@@ -58,12 +58,6 @@ work
   top: var(--space-5);
 }
 
-.works__title {
-  padding: 0;
-  letter-spacing: none;
-  border: solid 1px var(--guide-color);
-}
-
 .works__inner {
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
@@ -71,14 +65,17 @@ work
   border: solid 1px var(--guide-color);
 }
 
+/* --- PC left sticky --- */
 .works__intro {
   position: sticky;
   top: var(--space-8);
   border: solid 1px var(--guide-color);
   /* works__galleryとの幅を要調整 */
 }
-.works__intro h2 {
-  padding-right: 30px;
+
+.works__title {
+  padding: 0;
+  border: solid 1px var(--guide-color);
 }
 
 .works__lead {
@@ -103,10 +100,7 @@ work
   border-bottom: 1px solid #111;
 }
 
-.works__content {
-  box-sizing: border-box;
-  border-style: solid;
-}
+/* --- PC right  --- */
 .works__gallery {
   display: grid;
   grid-auto-flow: column;
@@ -119,6 +113,12 @@ work
   overflow: hidden;
 }
 
+.works__content {
+  box-sizing: border-box;
+  border-style: solid;
+  gap: 10px;
+}
+
 .works__content a {
   display: block;
   text-decoration: none;
@@ -126,7 +126,6 @@ work
   padding: var(--space-5);
   font-size: 15px;
   line-height: 1.6;
-  transition: opacity 0.3s ease, padding-left 0.3s ease;
 }
 .works__content img {
   display: block;
@@ -134,6 +133,21 @@ work
   object-fit: cover;
   transition: transform 0.5s ease, opacity 0.4s ease;
 }
+.works__content span {
+  display: block;
+  height: var(--space-4);
+}
+.works__card {
+  display: flex;
+  border: solid var(--guide-color);
+  gap: var(--space-3);
+  flex-direction: column;
+}
+
+.works__card__category {
+  color: inherit;
+}
+
 .works__p {
   display: block;
   margin-top: 50px;
@@ -155,7 +169,7 @@ work
 /* ==================================
 tool
 ================================== */
-#tools {
+#tool {
   background-color: cornflowerblue;
 }
 
