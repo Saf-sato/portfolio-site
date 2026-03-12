@@ -231,7 +231,7 @@ footer
 #footer {
   display: block;
   background: rgba(176, 235, 255, 0.166);
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .footer__inner {
   display: flex;

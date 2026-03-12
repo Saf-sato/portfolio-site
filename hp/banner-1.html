@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="・・・" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex,nofollow" />
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href=".." />
+    <link rel="apple-touch-icon-precomposed" href=".." />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/shared/reset.css" />
+    <link rel="stylesheet" href="/shared/common.css" />
+    <link rel="stylesheet" href="/shared/style.css" />
+    <link rel="stylesheet" href="/shared/about.css" />
+    <link rel="stylesheet" href="/shared/work.css" />
+
+    <title>title</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__name" href="#">Your Name</a>
+        <button class="menu-btn" id="menuButton" aria-expanded="false">
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <div id="overlay" class="overlay" hidden></div>
+    <nav id="siteDrawer" class="drawer" aria-hidden="true" hidden>
+      <div class="drawer__title">Menu</div>
+      <ul class="drawer__nav">
+        <li><a href="./#work">Work</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./#skills">Skills</a></li>
+        <li><a href="./#contact">Contact</a></li>
+        <li>
+          <a href="https://github.com/" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+      <div class="drawer__meta">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </nav>
+    <div class="container">
+      <main>
+        <!-- work -->
+        <section id="work">
+          <h2 class="work__title">Webバナー</h2>
+          <div class="work__wrapper">
+            <div class="work__left">
+              <span></span>
+              <img src="/img/works/banner-1_1.png" alt="" />
+            </div>
+            <div class="work__right">
+              <dl>
+                <dt>概要</dt>
+                <dd>架空ECサイト <br />商品訴求バナー</dd>
+                <dt>ターゲット</dt>
+                <dd>家庭用 / ギフト需要<br /></dd>
+                <dt>デザイン意図</dt>
+                <dd>新米訴求 <br />金・黒で高級感 <br />宮城県産を強調</dd>
+              </dl>
+              <p class="work__category">Designe / Direction</p>
+              <span></span>
+            </div>
+          </div>
+        </section>
+
+        <section id="comment">
+          <div class="comment__wrapper">
+            <ul class="comment__list"></ul>
+            <h3>架空ふるさと納税バナー</h3>
+            <br />
+            <div class="comment__url">
+              <a href="https//---">https//---</a>
+            </div>
+            <p class="comment__txt">
+              ECサイト掲載を想定した架空ふるさと納税バナーを制作いたしました。
+              <br />
+              新米かつブランド感を出すために金と黒をテーマカラーとして高級感を訴求しました。
+              <br />
+              <br />
+
+              ・サムネイルA（H800*H800px） <br />
+              ・サムネイルB（H800*H495px） ※Aをリサイズ <br />
+              ・商品説明（H800*H800px） 2点 <br />
+            </p>
+          </div>
+
+          <div class="comment__image">
+            <ul>
+              <li>
+                <img src="/img/works/banner-1_2.png" alt="" />
+              </li>
+              <li>
+                <img src="/img/works/banner-1_1.png" alt="" />
+              </li>
+              <li>
+                <img src="/img/works/banner-1_3.png" alt="" />
+              </li>
+              <li>
+                <img src="/img/works/banner-1_4.png" alt="" />
+              </li>
+            </ul>
+            <span></span>
+          </div>
+        </section>
+
+        <a href="/index.html#works" class="back__button">
+          <span class="back__button__arrow" aria-hidden="true">←</span>
+          <span>もどる</span>
+        </a>
+      </main>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container footer__inner">
+        <a class="header__name" href="#">Top</a>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/shared/main.js"></script>
+  </body>
+</html>

@@ -108,4 +108,22 @@ work --comment
 }
 
 .comment__txt {
+  margin-bottom: var(--space-7);
+}
+.comment__image {
+  list-style: none;
+  padding: none;
+}
+.comment__image li {
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.comment__image li img {
+  display: block;
+}
+
+.comment__image span {
+  display: block;
+  height: 100px;
 }
