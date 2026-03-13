@@ -133,7 +133,7 @@ header
   z-index: 50;
   background: rgba(176, 235, 255, 0.166);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-border);
 }
 .header__inner {
   display: flex;
@@ -152,7 +152,7 @@ header
   place-items: center;
   width: 44px;
   height: 44px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border);
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
