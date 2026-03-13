@@ -1,5 +1,5 @@
 /* ==================================
-work --hp
+work --wrapper 
 ================================== */
 #work {
   position: relative;
@@ -121,6 +121,7 @@ work --comment
 
 .comment__image li img {
   display: block;
+  width: 70%;
 }
 
 .comment__image span {

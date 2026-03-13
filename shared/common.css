@@ -32,6 +32,7 @@ a:hover {
   --space-6: 64px;
   --space-7: 80px;
   --space-8: 96px;
+  --space-9: 128px;
 
   /* --- drawer animation --- */
   --drawer-w: min(78vw, 360px);
@@ -54,7 +55,7 @@ body {
 }
 
 section {
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-8);
 }
 
 .container {
