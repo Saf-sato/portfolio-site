@@ -14,16 +14,35 @@ a:hover {
 }
 
 :root {
-  /* --- Layout --- */
+  /* ------ Layout ------ */
   --container: 1100px;
   --gutter: 20px;
 
-  /* --- Typography --- */
+  /* ------ Color system ------ */
+  --color-text: #444;
+  --color-subtext: #666;
+  --color-category: rgb(118, 118, 118);
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f7f7;
+  --color-border: #e5e5e5;
+  --color-accent: #4a80f6;
+
+  /* ------ Typography ------ */
   --fs-base: 16px;
   --lh-base: 1.7;
   --lh-tight: 1.2; /* 見出し用 */
 
-  /* --- Spacing scale --- */
+  /* Font  scale */
+  --fs-1: 12px;
+  --fs-2: 14px;
+  --fs-3: 16px;
+  --fs-4: 20px;
+  --fs-5: 24px;
+  --fs-6: 32px;
+  --fs-7: 40px;
+  --fs-8: 48px;
+
+  /* ------ Spacing scale ------ */
   --space-1: 8px;
   --space-2: 16px;
   --space-3: 24px;
@@ -34,7 +53,23 @@ a:hover {
   --space-8: 96px;
   --space-9: 128px;
 
-  /* --- drawer animation --- */
+  /* ------ Radius ------ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+
+  /* ------ Shadow ----- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+  /* ------ Z index ------ */
+  --z-header: 50;
+  --z-overlay: 80;
+  --z-drawer: 90;
+  --z-modal: 100;
+
+  /* ------ Animation ------ */
   --drawer-w: min(78vw, 360px);
   --dur: 240ms; /* アニメーション時間（240ms） */
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -55,19 +90,20 @@ body {
 }
 
 section {
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-9);
 }
 
 .container {
   width: min(100% - (var(--gutter) * 2), var(--container));
   margin-inline: auto;
-  padding: 0 16px;
+  padding: 0 var(--space-2);
 }
 
 [class$="__title"] {
   font-weight: 100;
   font-size: var(--space-4);
   letter-spacing: 0.14em;
+  margin-bottom: var(--space-6);
 }
 
 h1,

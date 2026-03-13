@@ -75,13 +75,14 @@ work
 .works__title {
   padding: 0;
   border: solid 1px var(--guide-color);
+  margin: 0;
 }
 
 .works__lead {
   display: block;
   font-size: calc(4px+ (var(--space-1)));
   line-height: 1.9;
-  color: #444;
+  color: var(--color-text);
   margin-top: var(--space-3);
   border: solid 1px var(--guide-color);
 }
@@ -91,7 +92,7 @@ work
   align-items: center;
   gap: 10px;
   width: fit-content;
-  font-size: 14px;
+  font-size: var(--fs-2);
   line-height: 1;
   text-decoration: none;
   color: inherit;
@@ -123,7 +124,7 @@ work
   text-decoration: none;
   color: inherit;
   padding: var(--space-5);
-  font-size: 15px;
+  font-size: var(--fs-2);
   line-height: 1.6;
 }
 .works__content img {
@@ -169,22 +170,12 @@ work
 Tools
 =============================== */
 
-.tools {
-  padding: 120px 0;
-}
-
-.tools__title {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
 .tools__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
-  margin-top: var(--space-6);
   padding: 0;
   list-style: none;
 }

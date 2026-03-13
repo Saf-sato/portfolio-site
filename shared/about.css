@@ -27,10 +27,10 @@ about
 }
 
 .about__p {
-  /* position: relative; */
   display: block;
   top: calc(var(--space-6) + var(--space-8));
   border: solid 1px var(--guide-color);
+  margin-bottom: var(--space-5);
 }
 
 .about__p p {

@@ -12,16 +12,11 @@ work --wrapper
   border: solid 1px var(--guide-color);
 }
 
-.work__title {
-  margin-bottom: var(--space-4);
-}
-
 /* --- overview --- */
 .work__wrapper {
   display: flex;
   justify-content: space-around;
   gap: var(--space-7);
-  margin-bottom: var(--space-3);
   border: solid 1px var(--guide-color);
 }
 
@@ -68,7 +63,7 @@ work --wrapper
 
 .work__category {
   font-size: 14px;
-  color: rgb(118, 118, 118);
+  color: var(--color-category);
   line-height: 1;
   text-decoration: none;
   color: inherit;
@@ -80,6 +75,10 @@ work --wrapper
 work --comment
 ================================== */
 
+#comment {
+  position: relative;
+  bottom: var(--space-5);
+}
 .comment__wrapper {
   display: block;
   border: solid 1px var(--guide-color);
