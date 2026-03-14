@@ -25,7 +25,8 @@ hero
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--color-title);
+  text-shadow: var(--shadow-lg);
 }
 
 /* ==================================
@@ -34,15 +35,15 @@ self
 #self {
   position: relative;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 var(--space-2);
 }
 
 .self__name {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: var(--space-4);
 }
 .self__name span {
-  margin-left: 16px;
+  margin-left: var(--space-2);
 }
 
 /* .self__p {
@@ -61,20 +62,20 @@ work
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
   align-items: start;
-  border: solid 1px var(--guide-color);
+  border: solid 1px var(--guide-line);
 }
 
 /* --- PC left sticky --- */
 .works__intro {
   position: sticky;
   top: var(--space-8);
-  border: solid 1px var(--guide-color);
+  border: solid 1px var(--guide-line);
   /* works__galleryとの幅を要調整 */
 }
 
 .works__title {
   padding: 0;
-  border: solid 1px var(--guide-color);
+  border: solid 1px var(--guide-line);
   margin: 0;
 }
 
@@ -84,13 +85,12 @@ work
   line-height: 1.9;
   color: var(--color-text);
   margin-top: var(--space-3);
-  border: solid 1px var(--guide-color);
+  border: solid 1px var(--guide-line);
 }
 
 .works__link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   width: fit-content;
   font-size: var(--fs-2);
   line-height: 1;
@@ -106,8 +106,8 @@ work
   grid-auto-flow: column;
   grid-template-rows: repeat(4, auto);
   column-gap: 1.5em;
-  gap: 30px;
-  padding-left: 70px;
+  gap: var(--space-6);
+  padding-left: var(--space-7);
 }
 .works__gallery li {
   overflow: hidden;
@@ -115,8 +115,7 @@ work
 
 .works__content {
   box-sizing: border-box;
-  border-style: solid;
-  gap: 10px;
+  border: solid 1px var(--guide-line);
 }
 
 .works__content a {
@@ -131,6 +130,7 @@ work
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: var(--radius-lg);
   transition: transform 0.5s ease, opacity 0.4s ease;
 }
 .works__content span {
@@ -142,28 +142,16 @@ work
   transform: scale(1.013);
   opacity: 0.92;
 }
-.works__content a:hover .works__p {
-  color: inherit;
-}
-.works__content a:hover .works__p {
-  opacity: 0.7;
-}
 
 .works__card {
   display: flex;
-  border: solid var(--guide-color);
+  border: solid 1px var(--guide-line);
   gap: var(--space-3);
   flex-direction: column;
 }
 
-.works__card div {
-  color: inherit;
-}
-
 .works__card h3 {
   margin-left: var(--space-1);
-}
-@media (min-width: 960px) {
 }
 
 /* ===============================
@@ -173,7 +161,7 @@ Tools
 .tools__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: var(--space-4);
   max-width: 900px;
   margin: 0 auto;
   padding: 0;
@@ -182,12 +170,13 @@ Tools
 
 .tools__item {
   border: 1px solid #eee;
+  box-shadow: var(--shadow-md);
   padding: var(--space-4);
 }
 
 .tools__item h3 {
-  margin-bottom: var(--space-2);
   font-weight: 600;
+  margin-bottom: var(--space-2);
 }
 
 .tools__item ul {
@@ -195,11 +184,7 @@ Tools
 }
 
 .tools__item li {
-  margin-bottom: 8px;
-}
-
-.tools__item {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
+  margin-bottom: var(--space-1);
 }
 
 /* ==================================

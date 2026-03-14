@@ -4,12 +4,12 @@ work --wrapper
 #work {
   position: relative;
   overflow: hidden;
-  margin-top: var(--space-7);
+  margin-top: var(--space-9);
 }
 #work span {
   display: block;
   height: var(--space-6);
-  border: solid 1px var(--guide-color);
+  border: solid 1px var(--guide-line);
 }
 
 /* --- overview --- */
@@ -17,7 +17,7 @@ work --wrapper
   display: flex;
   justify-content: space-around;
   gap: var(--space-7);
-  border: solid 1px var(--guide-color);
+  border: solid 1px var(--guide-line);
 }
 
 .work__left img {
@@ -43,12 +43,12 @@ work --wrapper
 .work__right dt,
 .work__right dd {
   margin: 0;
-  padding: 24px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
 }
 .work__right dt {
   font-weight: 600;
-  line-height: 1.6;
+
   padding-left: var(--space-2);
 }
 .work__right dd {
@@ -58,30 +58,24 @@ work --wrapper
 .work__right p {
   margin: 0 auto;
   margin-bottom: var(--space-3);
-  line-height: 1.9; /*!! */
 }
 
 .work__category {
-  font-size: 14px;
+  font-size: var(--fs-2);
   color: var(--color-category);
   line-height: 1;
-  text-decoration: none;
-  color: inherit;
   padding-left: var(--space-2);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* ==================================
 work --comment
 ================================== */
 
-#comment {
-  position: relative;
-  bottom: var(--space-5);
-}
 .comment__wrapper {
   display: block;
-  border: solid 1px var(--guide-color);
+  border: solid 1px var(--guide-line);
+  margin-bottom: var(--space-5);
 }
 .comment__list {
   display: flex;
@@ -98,16 +92,11 @@ work --comment
 .comment__url {
   display: inline-flex;
   align-items: center;
-  font-size: 14px;
+  font-size: var(--fs-2);
+  color: var(--color-subtext);
   line-height: 1;
-  text-decoration: none;
-  color: inherit;
   margin-left: var(--space-2);
   margin-bottom: var(--space-4);
-}
-
-.comment__txt {
-  margin-bottom: var(--space-7);
 }
 .comment__image {
   list-style: none;
