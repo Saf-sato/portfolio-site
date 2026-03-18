@@ -101,3 +101,17 @@ window.addEventListener("scroll", () => {
   const y = window.scrollY * 0.3;
   hero.style.transform = `translateY(${y}px)`;
 });
+
+/* ==================================
+common --fade-in,fade-up CSS
+================================== */
+
+window.addEventListener("load", () => {
+  const fadeIns = document.querySelectorAll(".fade__in, .fade__up");
+
+  setTimeout(() => {
+    fadeIns.forEach((el) => {
+      el.classList.add("is__show");
+    });
+  }, 100);
+});

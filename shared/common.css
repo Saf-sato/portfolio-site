@@ -77,8 +77,10 @@ a:hover {
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
 
   /* --- guide line --- */
-  --guide-line: rgba(74, 129, 246, 0);
-  --guide-bg: rgb(172, 240, 255);
+  --guide-line: none;
+  --guide-bg: none;
+  /* --guide-line: rgb(54, 94, 180);
+  --guide-bg: rgb(172, 240, 255); */
   /* border: solid 1px var(--guide-color); */
 }
 
@@ -313,4 +315,27 @@ back__button
 
 .back__button:hover .back__button__arrow {
   transform: translateX(-4px);
+}
+
+/* ==================================
+hero --fade-in,fade-up CSS
+================================== */
+.fade__in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade__in.is__show {
+  opacity: 1;
+}
+
+.fade__up {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade__up.is__show {
+  opacity: 1;
+  transform: translateY(0);
 }
