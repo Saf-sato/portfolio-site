@@ -74,6 +74,7 @@ work
   top: var(--space-8);
   border: solid 1px var(--guide-line);
   /* works__galleryとの幅を要調整 */
+  margin-top: var(--space-4);
 }
 
 .works__title {
@@ -160,6 +161,11 @@ work
 /* ===============================
 Tools
 =============================== */
+#tools {
+  background-color: var(--color-bg-soft);
+  padding: var(--space-6) 0;
+  display: block;
+}
 
 .tools__list {
   display: grid;
@@ -169,6 +175,10 @@ Tools
   margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+.tools__title {
+  text-align: center;
 }
 
 .tools__item {

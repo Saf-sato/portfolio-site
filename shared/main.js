@@ -95,7 +95,7 @@ header  --Hamburger + Drawer
 /* ==================================
 hero  --simpleParallax CSS
 ================================== */
-const hero = document.querySelector(".hero__bg img");
+const hero = document.querySelector(".parallax");
 
 window.addEventListener("scroll", () => {
   const y = window.scrollY * 0.3;
@@ -103,11 +103,11 @@ window.addEventListener("scroll", () => {
 });
 
 /* ==================================
-common --fade-in,fade-up CSS
+common --fade-in CSS
 ================================== */
 
 window.addEventListener("load", () => {
-  const fadeIns = document.querySelectorAll(".fade__in, .fade__up");
+  const fadeIns = document.querySelectorAll(".fade__in");
 
   setTimeout(() => {
     fadeIns.forEach((el) => {
