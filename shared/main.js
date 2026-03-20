@@ -95,11 +95,12 @@ header  --Hamburger + Drawer
 /* ==================================
 hero  --simpleParallax CSS
 ================================== */
-const hero = document.querySelector(".parallax");
+
+const simpleParallax = document.querySelector(".parallax");
 
 window.addEventListener("scroll", () => {
   const y = window.scrollY * 0.3;
-  hero.style.transform = `translateY(${y}px)`;
+  simpleParallax.style.transform = `translateY(${y}px)`;
 });
 
 /* ==================================
