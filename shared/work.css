@@ -83,13 +83,14 @@ work --comment
   display: flex;
   list-style: none;
   margin-bottom: var(--space-5);
-  flex-direction: column;
 }
 .comment__list li {
   padding: var(--space-1);
   margin-left: var(--space-2);
   border: solid 1px;
-  border-radius: 10%;
+  border-radius: var(--radius-md);
+  display: block;
+  width: max-content;
 }
 
 .comment__url {
