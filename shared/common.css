@@ -109,7 +109,7 @@ section {
 
 [class$="__title"] {
   font-weight: 100;
-  font-size: var(--space-4);
+  font-size: var(--fs-6);
   letter-spacing: 0.14em;
   margin-bottom: var(--space-6);
 }

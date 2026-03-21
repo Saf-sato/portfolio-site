@@ -5,6 +5,7 @@ work --wrapper
   position: relative;
   overflow: hidden;
   margin-top: var(--space-9);
+  margin-bottom: var(--space-4);
 }
 #work span {
   display: block;
@@ -82,6 +83,7 @@ work --comment
   display: flex;
   list-style: none;
   margin-bottom: var(--space-5);
+  flex-direction: column;
 }
 .comment__list li {
   padding: var(--space-1);
@@ -99,24 +101,107 @@ work --comment
   margin-left: var(--space-2);
   margin-bottom: var(--space-4);
 }
-.comment__image {
+
+/* ==================================
+work --image
+================================== */
+.image__list {
   position: relative;
   top: var(--space-4);
   list-style: none;
   padding: none;
 }
-.comment__image li {
+.image__list li {
   display: flex;
   justify-content: center;
   margin-bottom: var(--space-4);
 }
 
-.comment__image li img {
+.image__list li img {
   display: block;
   width: 60%;
 }
 
-.comment__image span {
+.image__list span {
   display: block;
   height: 100px;
+}
+
+/* ==================================
+work --story
+================================== */
+.story__title {
+  display: flex;
+  font-size: var(--fs-4);
+}
+.story__list {
+  display: grid;
+}
+.story__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: var(--space-5);
+}
+
+.story__item h4 {
+  min-width: 200px;
+}
+
+/* ==================================
+work --user
+================================== */
+.user__title {
+  display: flex;
+  font-size: var(--fs-4);
+}
+
+.user__list {
+  display: grid;
+}
+.user__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: var(--space-5);
+}
+
+.user__item h4 {
+  min-width: 200px;
+}
+
+/* ==================================
+work-common checkmark
+================================== */
+.checkmark {
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.checkmark:before,
+.checkmark:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.checkmark:before {
+  width: var(--space-3);
+  height: var(--space-3);
+  border-radius: var(--space-3);
+  background: #ffffff;
+  border: 1px solid #000000;
+  left: 0;
+  top: 3px;
+}
+.checkmark:after {
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  width: var(--space-3);
+  height: var(--space-1);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 5px;
+  top: 3px;
 }
