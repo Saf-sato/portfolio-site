@@ -128,3 +128,24 @@ window.addEventListener("load", () => {
     });
   }, 100);
 });
+
+/* ==================================
+common --scroll-image CSS
+================================== */
+
+const scrollImages = document.querySelectorAll(".scroll-image");
+
+window.addEventListener("scroll", () => {
+  scrollImages.forEach((wrap) => {
+    const img = wrap.querySelector("img");
+    const rect = wrap.getBoundingClientRect();
+    const windowH = window.innerHeight;
+
+    // 要素が画面内にある時だけ動かす
+    if (rect.bottom > 0 && rect.top < windowH) {
+      const progress = (windowH - rect.top) / (windowH + rect.height);
+      const moveY = (progress - 0.5) * 200; // 動く量
+      img.style.transform = `translateY(${moveY}px)`;
+    }
+  });
+});

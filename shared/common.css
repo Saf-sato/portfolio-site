@@ -86,6 +86,7 @@ a:hover {
 
 html {
   font-size: var(--fs-base);
+  caret-color: transparent;
 }
 
 body {
