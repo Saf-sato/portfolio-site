@@ -38,7 +38,7 @@ about
 
 .about__area {
   position: relative;
-  height: 40vh;
+  height: 60vh;
   overflow: hidden;
   clip-path: border-box;
 }

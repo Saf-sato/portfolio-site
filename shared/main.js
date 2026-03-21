@@ -93,15 +93,27 @@ header  --Hamburger + Drawer
 })();
 
 /* ==================================
-hero  --simpleParallax CSS
+common  --simpleParallax CSS
 ================================== */
 
-const simpleParallax = document.querySelector(".parallax");
+(() => {
+  const parallaxItems = document.querySelectorAll(".parallax");
 
-window.addEventListener("scroll", () => {
-  const y = window.scrollY * 0.3;
-  simpleParallax.style.transform = `translateY(${y}px)`;
-});
+  if (!parallaxItems.length) return;
+
+  const updateParallax = () => {
+    const scrollY = window.scrollY;
+
+    parallaxItems.forEach((el) => {
+      const speed = Number(el.dataset.speed) || 0.3;
+      const y = scrollY * speed;
+      el.style.transform = `translateY(${y}px)`;
+    });
+  };
+
+  window.addEventListener("scroll", updateParallax, { passive: true });
+  updateParallax();
+})();
 
 /* ==================================
 common --fade-in CSS
