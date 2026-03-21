@@ -111,6 +111,12 @@ work --image
   top: var(--space-4);
   list-style: none;
   padding: none;
+
+  display: flex;
+  padding: 0 15vw;
+  object-position: center;
+  /* object-fit: none; */
+  justify-content: center;
 }
 .image__list li {
   display: flex;
@@ -120,14 +126,15 @@ work --image
 
 .image__list li img {
   display: block;
-  width: 60%;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .image__list span {
   display: block;
   height: 100px;
 }
-
 /* ==================================
 work --story
 ================================== */
@@ -171,6 +178,38 @@ work --user
 
 .user__item h4 {
   min-width: 200px;
+}
+
+/* ==================================
+work --wire
+================================== */
+.wire__title {
+  display: flex;
+  font-size: var(--fs-4);
+}
+.wire__list {
+  display: flex;
+  list-style: none;
+  justify-items: center;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.wire__list li {
+  overflow: hidden;
+  padding: var(--space-2);
+}
+
+.wire__list img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wire__list li:nth-child(2) img {
+  max-width: 500px;
 }
 
 /* ==================================
