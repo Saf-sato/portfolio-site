@@ -21,11 +21,11 @@
 
     <title>title</title>
   </head>
-  <body>
+  <body class>
     <!-- header -->
     <header class="header">
       <div class="container header__inner">
-        <a class="header__name" href="/index.html">Your Name</a>
+        <a class="header__name" href="/index.html">Fumi Sato</a>
         <button class="menu-btn" id="menuButton" aria-expanded="false">
           <span class="menu-icon" aria-hidden="true">
             <span></span><span></span><span></span>
@@ -40,19 +40,19 @@
       <ul class="drawer__nav">
         <li><a href="/about.html">About</a></li>
         <li><a href="#works">Works</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#tools">Tools</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="https://github.com/" target="_blank" rel="noreferrer"
+          <a
+            href="https://github.com/Saf-sato/portfolio-site"
+            target="_blank"
+            rel="noreferrer"
             >GitHub</a
           >
         </li>
       </ul>
       <div class="drawer__meta">
-        <a href="mailto:you@example.com">you@example.com</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
-          >LinkedIn</a
-        >
+        <a href="mailto:you@example.com">--@example.com</a>
       </div>
     </nav>
 
@@ -63,8 +63,8 @@
           <img class="parallax fade__in" src="/img/hero_1.jpg" alt="" />
         </div>
         <div class="hero__name fade__in">
-          <h1>Fumi Sato</h1>
-          <p>Portfolio</p>
+          <h1>Portfolio</h1>
+          <p>web & graphic design</p>
         </div>
       </section>
 
@@ -78,22 +78,28 @@
           <div class="self__p">
             <div class="self__p1">
               <p>
-                仙台市在住。東北を中心に東日本を転々としてきました。フリーランス。<br />
-                営業、受付、コールセンターの経歴があります。
+                宮城県仙台市にてフリーランスのWeb制作をしております。<br />
+                Webデザイナーを志望し、Web業界へ転職活動中です。
               </p>
             </div>
             <br />
             <div class="self__p2">
               <p>
-                派手なことはできません。<br />でも、途中で投げ出さず、<br />
+                派手なことはできません。<br />でも、途中で投げ出さず、
                 最後まで一緒に考えます。
               </p>
             </div>
-
-            <a href="/about.html">About</a>
+            <a href="/about.html" class="next__button"
+              ><span>About</span>
+              <span class="next__button__arrow" aria-hidden="true"> →</span>
+            </a>
+          </div>
+          <div class="self__area">
+            <img class src="/img/self_1.jpg" alt="" />
           </div>
         </section>
       </div>
+
       <!-- work -->
       <div class="container">
         <section id="works">
@@ -125,7 +131,7 @@
 
               <div class="works__content">
                 <a href="/works/hp-2.html">
-                  <img src="/img/works/hp-2_1.png" alt="HP①のサムネイル" />
+                  <img src="/img/works/hp-2_2.png" alt="HP①のサムネイル" />
                   <span></span>
                   <div class="works__card">
                     <div>Website</div>
@@ -201,8 +207,16 @@
       <div class="container">
         <section id="contact">
           <h2 class="contact__title">Contact</h2>
-          <p>ご相談は下記メールまでお願いいたします。</p>
-          <a href="---@gmail.com" class="contact__mail"> /---@gmail.com </a>
+          <div class="contact__lead">
+            <p>ご相談は下記メールまでお願いいたします。</p>
+            <span></span>
+            <a
+              href="mailto:recipient@email.com,recipient2@email.com"
+              class="contact__mail"
+            >
+              /---@gmail.com
+            </a>
+          </div>
         </section>
       </div>
     </main>

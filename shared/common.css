@@ -23,6 +23,8 @@ a:hover {
   --color-subtext: #666;
   --color-category: rgb(103, 103, 103);
   --color-bg: #ffffff;
+  --color-footer: rgba(176, 235, 255, 0.166);
+  --color-bg-shadow: rgba(0, 0, 0, 0.35);
   --color-bg-soft: #f7f7f7;
   --color-border: #2929293c;
   --color-accent: #4a80f6;
@@ -55,16 +57,16 @@ a:hover {
   --space-9: 160px;
 
   /* ------ Radius ------ */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 20px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
 
   /* ------ Shadow ----- */
   --shadow-sm: 0 2px 2px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 5px 5px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
-
+  --shadow-xl: 0 5px 20px rgba(0, 0, 0, 0.24);
   /* ------ Z index ------ */
   --z-header: 50;
   --z-overlay: 80;
@@ -123,6 +125,10 @@ h4 {
 p {
   margin: 0;
   letter-spacing: 0.05em;
+}
+
+img {
+  box-shadow: var(--shadow-lg);
 }
 
 * {
@@ -274,8 +280,8 @@ footer
 #footer {
   display: block;
   position: relative;
-  background: rgba(176, 235, 255, 0.166);
-  top: 150px;
+  background: var(--color-footer);
+  top: var(--space-9);
 }
 .footer__inner {
   display: flex;
@@ -289,13 +295,28 @@ footer
 }
 
 /* ==================================
-back__button
+next,back__button
 ================================== */
-/* 
-        <a href="~~~~~~~" class="back__button">
-          <span class="back__button__arrow" aria-hidden="true">←</span>
-          <span>もどる</span>
-        </a> */
+.next__button {
+  display: flex;
+  inline-size: max-content;
+  /* margin: 0 auto;   真ん中寄せ解除  */
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.next__button:hover {
+  opacity: 0.7;
+}
+
+.next__button__arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.next__button:hover .next__button__arrow {
+  transform: translateX(4px);
+}
 
 .back__button {
   display: flex;
@@ -329,3 +350,7 @@ hero --fade-in CSS
 .fade__in.is__show {
   opacity: 1;
 }
+
+/* ==================================
+common --page-animation
+================================== */

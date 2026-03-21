@@ -91,7 +91,7 @@ about
   font-size: var(--fs-7);
   font-weight: 200;
   letter-spacing: var(--fs-2);
-  background: rgba(0, 0, 0, 0.35);
+  background: var(--color-bg-shadow);
   color: var(--color-title);
   padding: var(--space-2);
   opacity: 0;

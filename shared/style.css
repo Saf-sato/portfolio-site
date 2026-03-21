@@ -38,6 +38,7 @@ self
 #self {
   position: relative;
   width: 100%;
+  margin-bottom: calc(var(--space-8) + var(--space-9));
   padding: 0 var(--space-2);
 }
 
@@ -49,6 +50,31 @@ self
   margin-left: var(--space-2);
 }
 
+.self__p {
+  margin-bottom: var(--space-6);
+}
+.self__p a {
+  display: block;
+  position: relative;
+  font-size: var(--fs-4);
+  left: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.self__space {
+  margin-bottom: var(--space-4);
+}
+
+.self__area {
+  position: relative;
+}
+.self__area img {
+  object-fit: cover;
+  width: 100%;
+  height: 40vh;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
 /* .self__p {
   letter-spacing: 0.2rem;
 } */
@@ -134,7 +160,7 @@ work
   display: block;
   width: 100%;
   object-fit: cover;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   transition: transform 0.5s ease, opacity 0.4s ease;
 }
 .works__content span {
@@ -143,8 +169,7 @@ work
 }
 
 .works__content a:hover img {
-  transform: scale(1.013);
-  opacity: 0.92;
+  opacity: 1;
 }
 
 .works__card {
@@ -183,7 +208,7 @@ Tools
 
 .tools__item {
   border: 1px solid #eee;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   padding: var(--space-4);
 }
 
@@ -204,5 +229,12 @@ Tools
 contact
 ================================== */
 #contact {
-  background-color: greenyellow;
+  margin-bottom: var(--space-6);
+}
+.contact__lead p {
+  margin-bottom: var(--space-2);
+}
+.contact__lead a {
+  position: relative;
+  left: var(--space-2);
 }
