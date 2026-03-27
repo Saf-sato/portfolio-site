@@ -25,6 +25,8 @@ work --wrapper
   display: block;
   margin-inline: auto;
   box-shadow: none;
+  max-height: 480px;
+  border-radius: var(--radius-md);
 }
 .work__left h2 {
   text-align: center;
@@ -127,6 +129,8 @@ work --image
 .image__list li img {
   display: block;
   object-fit: cover;
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-lg);
   max-width: 100%;
   height: auto;
 }
@@ -213,7 +217,7 @@ work --wire
 }
 
 /* ==================================
-work-common checkmark
+work-common CheckMark
 ================================== */
 .checkmark {
   padding-left: var(--space-4);
@@ -243,5 +247,5 @@ work-common checkmark
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: 5px;
-  top: 3px;
+  top: 6px;
 }

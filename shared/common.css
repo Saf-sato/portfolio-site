@@ -136,6 +136,38 @@ img {
 }
 
 /* ==================================
+common --fade-in CSS
+================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade__in {
+  opacity: 0;
+  transition: opacity 1s ease;
+  /* アニメーション設定 */
+  animation: fadeIn linear;
+  animation-timeline: view(); /* スクロールと連動 */
+  animation-range: entry 0% cover 50%;
+}
+
+.fade__in.is__show {
+  opacity: 1;
+}
+
+/* ==================================
+common --page-animation
+================================== */
+
+/* ==================================
 header
 ================================== */
 /* --- Header --- */
@@ -338,19 +370,3 @@ next,back__button
 .back__button:hover .back__button__arrow {
   transform: translateX(-4px);
 }
-
-/* ==================================
-hero --fade-in CSS
-================================== */
-.fade__in {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.fade__in.is__show {
-  opacity: 1;
-}
-
-/* ==================================
-common --page-animation
-================================== */
