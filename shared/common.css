@@ -136,6 +136,51 @@ img {
 }
 
 /* ==================================
+common next,back__button
+================================== */
+.next__button {
+  display: flex;
+  inline-size: max-content;
+  /* margin: 0 auto;   真ん中寄せ解除  */
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.next__button:hover {
+  opacity: 0.7;
+}
+
+.next__button__arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.next__button:hover .next__button__arrow {
+  transform: translateX(4px);
+}
+
+.back__button {
+  display: flex;
+  inline-size: max-content;
+  margin: 0 auto;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.back__button:hover {
+  opacity: 0.7;
+}
+
+.back__button__arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.back__button:hover .back__button__arrow {
+  transform: translateX(-4px);
+}
+
+/* ==================================
 common --fade-in CSS
 ================================== */
 
@@ -150,19 +195,17 @@ common --fade-in CSS
   }
 }
 
-.fade__in {
+[data-animate="fade"] {
   opacity: 0;
   transition: opacity 1s ease;
-  /* アニメーション設定 */
   animation: fadeIn linear;
-  animation-timeline: view(); /* スクロールと連動 */
-  animation-range: entry 0% cover 50%;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35%;
 }
 
-.fade__in.is__show {
+[data-animate="fade"].is__show {
   opacity: 1;
 }
-
 /* ==================================
 common --page-animation
 ================================== */
@@ -324,49 +367,4 @@ footer
 .footer__name {
   font-weight: 600;
   letter-spacing: 0.04em;
-}
-
-/* ==================================
-next,back__button
-================================== */
-.next__button {
-  display: flex;
-  inline-size: max-content;
-  /* margin: 0 auto;   真ん中寄せ解除  */
-  align-items: center;
-  gap: var(--space-1);
-}
-
-.next__button:hover {
-  opacity: 0.7;
-}
-
-.next__button__arrow {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.next__button:hover .next__button__arrow {
-  transform: translateX(4px);
-}
-
-.back__button {
-  display: flex;
-  inline-size: max-content;
-  margin: 0 auto;
-  align-items: center;
-  gap: var(--space-1);
-}
-
-.back__button:hover {
-  opacity: 0.7;
-}
-
-.back__button__arrow {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.back__button:hover .back__button__arrow {
-  transform: translateX(-4px);
 }

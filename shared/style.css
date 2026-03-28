@@ -156,7 +156,7 @@ work
 }
 .works__content img {
   display: block;
-  max-height: 480px;
+  max-height: 450px;
   object-position: center;
   margin: 0 auto;
   box-shadow: var(--shadow-md);

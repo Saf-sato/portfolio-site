@@ -116,11 +116,11 @@ common  --simpleParallax CSS
 })();
 
 /* ==================================
-common --fade-in CSS
+common data-animate="fade"
 ================================== */
 
 window.addEventListener("load", () => {
-  const fadeIns = document.querySelectorAll(".fade__in");
+  const fadeIns = document.querySelectorAll('[data-animate="fade"]');
 
   setTimeout(() => {
     fadeIns.forEach((el) => {
