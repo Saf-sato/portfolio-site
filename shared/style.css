@@ -199,6 +199,32 @@ work
   width: max-content;
 }
 
+/* tablet/sp境界 */
+@media (max-width: 768px) {
+  .works__inner {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    border: solid 1px var(--guide-line);
+  }
+  .works__intro {
+    position: inherit;
+    display: contents;
+  }
+
+  /* --- PC right  --- */
+  .works__gallery {
+    padding-left: 0;
+  }
+  .works__content img {
+    max-height: 300px;
+  }
+  .works__card ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* ===============================
 Tools
 =============================== */
@@ -240,7 +266,12 @@ Tools
 .tools__item li {
   margin-bottom: var(--space-1);
 }
-
+/* tablet/sp境界 */
+@media (max-width: 768px) {
+  .tools__list {
+    grid-template-columns: none;
+  }
+}
 /* ==================================
 contact
 ================================== */

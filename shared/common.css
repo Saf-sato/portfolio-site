@@ -98,7 +98,7 @@ body {
 }
 
 section {
-  margin-bottom: var(--space-9);
+  margin-bottom: var(--space-8);
 }
 
 .container {
@@ -133,6 +133,43 @@ img {
 
 * {
   box-sizing: border-box;
+}
+
+#works,
+#tools,
+#contact {
+  scroll-margin-top: var(--space-7);
+}
+
+/* ==================================
+  Breakpoints
+  Desktop First: 1024px / 768px
+================================== */
+
+/* --- タブレット: ～768px --- */
+@media (max-width: 768px) {
+  :root {
+    /* ------ Layout ------ */
+    --container: 100%;
+    --gutter: 16px;
+  }
+
+  section {
+    margin-bottom: var(--space-6);
+  }
+
+  .container {
+    width: min(100% - (var(--gutter) * 2), var(--container));
+    margin-inline: auto;
+    padding: 0 var(--space-1);
+  }
+
+  [class$="__title"] {
+    font-weight: 100;
+    font-size: var(--fs-6);
+    letter-spacing: 0.14em;
+    margin-bottom: var(--space-4);
+  }
 }
 
 /* ==================================
@@ -181,7 +218,7 @@ common next,back__button
 }
 
 /* ==================================
-common --fade-in CSS
+common data-animate="fade"
 ================================== */
 
 @keyframes fadeIn {
