@@ -88,7 +88,7 @@ self
 @media (max-width: 768px) {
   #self {
     margin-bottom: var(--space-9);
-    padding: 0 var(--space-8);
+    padding: 0 var(--space-4);
   }
 }
 
@@ -137,7 +137,7 @@ work
 }
 
 /* デザイン事例 */
-.works__link {
+/* .works__link {
   display: inline-flex;
   align-items: center;
   width: fit-content;
@@ -147,7 +147,7 @@ work
   color: inherit;
   padding-bottom: 4px;
   border-bottom: 1px solid #111;
-}
+} */
 
 /* --- PC right  --- */
 .works__gallery {
@@ -308,7 +308,6 @@ Tools
 /* tablet/sp境界 */
 @media (max-width: 768px) {
   .tools__list {
-    grid-template-columns: none;
     margin: 0 auto;
     min-width: 300px;
     padding: 0 var(--space-8);

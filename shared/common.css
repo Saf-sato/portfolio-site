@@ -250,7 +250,7 @@ img {
   .container {
     margin-inline: auto;
     width: min(100% - (var(--gutter) * 2), var(--container));
-    padding: 0;
+    /* padding: 0; */
   }
 
   [class$="__title"] {

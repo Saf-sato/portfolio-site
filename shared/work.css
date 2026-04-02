@@ -5,7 +5,7 @@ work --wrapper
   position: relative;
   overflow: hidden;
   margin-top: var(--space-9);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
 }
 #work span {
   display: block;
@@ -52,7 +52,6 @@ work --wrapper
 }
 .work__right dt {
   font-weight: 600;
-
   padding-left: var(--space-2);
 }
 .work__right dd {
@@ -72,6 +71,31 @@ work --wrapper
   opacity: 0.8;
 }
 
+/* ======= tablet/sp境界 =======*/
+@media (max-width: 768px) {
+  .work__title {
+    padding: 0 var(--space-4);
+  }
+  /* --- overview --- */
+  .work__wrapper {
+    gap: var(--space-3);
+  }
+  .work__right {
+    min-width: 300px;
+    padding-right: var(--space-3);
+  }
+
+  .work__right dl {
+    grid-template-columns: 130px 1fr;
+  }
+  .work__right dt,
+  .work__right dd {
+    padding: var(--space-2) 0;
+  }
+  .work__right span {
+    display: none;
+  }
+}
 /* ==================================
 work --comment
 ================================== */
@@ -103,6 +127,15 @@ work --comment
   line-height: 1;
   margin-left: var(--space-2);
   margin-bottom: var(--space-4);
+}
+/* ======= tablet/sp境界 =======*/
+@media (max-width: 768px) {
+  #comment {
+    margin-bottom: var(--space-9);
+  }
+  .comment__wrapper {
+    padding: 0 var(--space-8);
+  }
 }
 
 /* ==================================
@@ -139,6 +172,12 @@ work --image
   display: block;
   height: 100px;
 }
+/* ======= tablet/sp境界 =======*/
+@media (max-width: 768px) {
+  .comment__wrapper {
+    padding: 0 var(--space-4);
+  }
+}
 /* ==================================
 work --story
 ================================== */
@@ -160,7 +199,12 @@ work --story
 .story__item h4 {
   min-width: 200px;
 }
-
+/* ======= tablet/sp境界 =======*/
+@media (max-width: 768px) {
+  #story {
+    padding: 0 var(--space-4);
+  }
+}
 /* ==================================
 work --user
 ================================== */
@@ -182,6 +226,12 @@ work --user
 
 .user__item h4 {
   min-width: 200px;
+}
+/* ======= tablet/sp境界 =======*/
+@media (max-width: 768px) {
+  #user {
+    padding: 0 var(--space-4);
+  }
 }
 
 /* ==================================
@@ -215,7 +265,12 @@ work --wire
 .wire__list li:nth-child(2) img {
   max-width: 500px;
 }
-
+/* ======= tablet/sp境界 =======*/
+@media (max-width: 768px) {
+  .wire__title {
+    padding: 0 var(--space-4);
+  }
+}
 /* ==================================
 work-common CheckMark
 ================================== */
