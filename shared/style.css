@@ -87,6 +87,7 @@ self
 } */
 @media (max-width: 768px) {
   #self {
+    margin-bottom: var(--space-9);
     padding: 0 var(--space-8);
   }
 }
@@ -110,10 +111,12 @@ work
 .works__intro {
   position: sticky;
   top: var(--space-8);
-  border: solid 1px var(--guide-line);
+  animation-range: entry 0% cover 10%;
   /* works__galleryとの幅を要調整 */
   margin-top: var(--space-4);
   left: 10vw;
+  z-index: 10;
+  isolation: isolate;
 }
 
 .works__title {
@@ -155,7 +158,7 @@ work
   gap: var(--space-6);
   margin-top: var(--space-8);
   margin-left: var(--space-4);
-  /* z-index: -1; */
+  z-index: 1;
 }
 
 .works__content {
@@ -246,6 +249,7 @@ work
   .works__gallery {
     /* padding-left: var(--space-6); */
     margin-left: 0;
+    margin-top: var(--space-5);
   }
   .works__content img {
     max-height: 300px;
@@ -272,7 +276,7 @@ Tools
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-4);
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -280,6 +284,7 @@ Tools
 
 .tools__title {
   text-align: center;
+  animation-range: entry 0% cover 10%;
 }
 
 .tools__item {
@@ -304,7 +309,9 @@ Tools
 @media (max-width: 768px) {
   .tools__list {
     grid-template-columns: none;
-    margin: 0 100px;
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 0 var(--space-8);
   }
 }
 
@@ -320,4 +327,12 @@ contact
 .contact__lead a {
   position: relative;
   left: var(--space-2);
+}
+
+@media (max-width: 768px) {
+  #contact {
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 0 var(--space-8);
+  }
 }

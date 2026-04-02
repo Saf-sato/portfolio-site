@@ -104,6 +104,7 @@ work
 }
 
 .works__title {
+  position: relative;
   padding: 0;
   border: solid 1px var(--guide-line);
   margin: 0;
@@ -175,9 +176,13 @@ work
 .works__card {
   display: flex;
   border: solid 1px var(--guide-line);
-  padding: 0 var(--space-4);
+  padding-left: 0 var(--space-4);
   gap: var(--space-3);
   flex-direction: column;
+  margin-left: var(--space-3);
+  position: relative;
+  aspect-ratio: 600 / 360;
+  max-height: 500px;
 }
 
 .works__card h3 {
@@ -189,15 +194,45 @@ work
   display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 .works__card li {
   padding: var(--space-1);
-  margin-left: var(--space-2);
+  margin-left: var(--space-1);
   border: solid 1px;
   border-radius: var(--radius-md);
   display: block;
   width: max-content;
 }
+
+/* tablet/sp境界 */
+@media (max-width: 768px) {
+  .works__inner {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .works__intro {
+    position: inherit;
+    display: contents;
+  }
+  /* --- PC right --- */
+  .works__gallery {
+    padding-left: 0;
+  }
+  .works__content img {
+    aspect-ratio: 600 / 360;
+    object-fit: cover;
+    max-height: 300px;
+  }
+  .works__card ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ===============================/* ===============================/* ===============================
 
 /* ===============================
 Tools
@@ -240,7 +275,13 @@ Tools
 .tools__item li {
   margin-bottom: var(--space-1);
 }
-
+/* tablet/sp境界 */
+@media (max-width: 768px) {
+  .tools__list {
+    grid-template-columns: none;
+    margin: 0 100px;
+  }
+}
 /* ==================================
 contact
 ================================== */

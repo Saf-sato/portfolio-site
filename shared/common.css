@@ -260,6 +260,13 @@ img {
     margin-bottom: var(--space-4);
   }
 
+  :is(.works__title, ) {
+    font-weight: 100;
+    font-size: var(--fs-6);
+    letter-spacing: 0.14em;
+    margin-bottom: var(--space-4);
+  }
+
   h1,
   h2,
   h3,
@@ -354,6 +361,7 @@ common data-animate="fade"
   animation: fadeIn linear;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
+  /* 先に出したい要素向け数値 →0% cover 10%;*/
 }
 
 [data-animate="fade"].is__show {
@@ -520,4 +528,11 @@ footer
 .footer__name {
   font-weight: 600;
   letter-spacing: 0.04em;
+}
+@media (max-width: 768px) {
+  #footer {
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 0 var(--space-8);
+  }
 }
