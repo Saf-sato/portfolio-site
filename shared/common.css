@@ -67,6 +67,7 @@ a:hover {
   --shadow-md: 0 5px 5px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
   --shadow-xl: 0 5px 20px rgba(0, 0, 0, 0.24);
+  --shadow-wh: 2px 1px 1px rgb(222 222 222 / 41%);
   /* ------ Z index ------ */
   --z-header: 50;
   --z-overlay: 80;
@@ -255,7 +256,7 @@ img {
   [class$="__title"] {
     font-weight: 100;
     font-size: var(--fs-6);
-    letter-spacing: 0.38em;
+    letter-spacing: 0.14em;
     margin-bottom: var(--space-4);
   }
 
