@@ -24,7 +24,6 @@ about
 
 .about__bg img {
   position: relative;
-  /* max-width: 400px; */
   box-shadow: var(--shadow-md);
   border-radius: var(--radius-sm);
   border: solid 1px var(--guide-line);
@@ -37,7 +36,6 @@ about
   display: block;
   padding: 0 var(--space-4);
   text-align: -webkit-auto;
-  margin: 0 var(--space-4);
   /* __title css引用 */
   font-weight: 100;
   font-size: var(--fs-6);
@@ -48,7 +46,6 @@ about
 .about__p {
   display: block;
   padding: 0 var(--space-4);
-  margin: 0 var(--space-4);
   margin-bottom: var(--space-7);
   text-align: -webkit-auto;
 }
@@ -157,10 +154,10 @@ about
   grid-row: span 2;
 }
 
-/* ======= tablet/sp境界 =======*/
+/* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
   .about__name {
-    margin: 0 var(--space-4);
+    padding: 0 var(--space-4);
     margin-bottom: var(--space-4);
   }
 

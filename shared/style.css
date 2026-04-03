@@ -6,6 +6,7 @@ hero
   height: 80vh;
   overflow: hidden;
   clip-path: border-box;
+  margin-bottom: calc(var(--space-8) + var(--space-6));
 }
 
 .hero__bg {
@@ -32,10 +33,22 @@ hero
   text-shadow: var(--shadow-wh);
 }
 
-/* ======= tablet/sp境界 =======*/
+/* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
   .hero__name {
     left: 22%;
+  }
+}
+/* ====== モバイル横: ～480px ====== */
+@media (max-width: 480px) {
+  .hero__name {
+    left: 30%;
+  }
+}
+/* ====== モバイル縦: ～360px ====== */
+@media (max-width: 360px) {
+  .hero__name {
+    left: 30%;
   }
 }
 
@@ -45,7 +58,7 @@ self
 #self {
   position: relative;
   width: 100%;
-  margin-bottom: calc(var(--space-8) + var(--space-9));
+  margin-bottom: calc(var(--space-8) + var(--space-6));
   padding: 0 var(--space-2);
 }
 
@@ -63,9 +76,10 @@ self
 .self__p a {
   display: block;
   position: relative;
+  letter-spacing: 0.16em;
   font-size: var(--fs-4);
-  left: var(--space-3);
-  margin-top: var(--space-3);
+  left: var(--space-4);
+  margin-top: var(--space-5);
 }
 
 .self__space {
@@ -85,13 +99,22 @@ self
 /* .self__p {
   letter-spacing: 0.2rem;
 } */
+
+/* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
   #self {
-    margin-bottom: var(--space-9);
     padding: 0 var(--space-4);
   }
 }
-
+/* ====== モバイル横: ～480px ====== */
+@media (max-width: 480px) {
+  #self {
+    padding: 0 var(--space-1);
+  }
+}
+/* ====== モバイル縦: ～360px ====== */
+@media (max-width: 360px) {
+}
 /* ==================================
 work
 ================================== */
@@ -226,7 +249,7 @@ work
   width: max-content;
 }
 
-/* ======= tablet/sp境界 =======*/
+/* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
   .works__inner {
     display: flex;
@@ -261,6 +284,28 @@ work
   /* .works__card ul {
     flex-direction: column;
   } */
+}
+
+/* ====== モバイル横: ～480px ====== */
+@media (max-width: 480px) {
+  .works__content {
+    /* padding: 0 30px; */
+  }
+}
+.works__gallery {
+  gap: var(--space-4);
+  margin: 0 50px;
+}
+.works__content img {
+  max-height: 220px;
+}
+
+/* ====== モバイル縦: ～360px ====== */
+@media (max-width: 360px) {
+  .works__gallery {
+    gap: var(--space-4);
+    margin: 0 50px;
+  }
 }
 
 /* ===============================
@@ -305,12 +350,30 @@ Tools
 .tools__item li {
   margin-bottom: var(--space-1);
 }
-/* tablet/sp境界 */
+/* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
   .tools__list {
     margin: 0 auto;
     min-width: 300px;
-    padding: 0 var(--space-8);
+    padding: 0 var(--space-4);
+  }
+}
+/* ====== モバイル横: ～480px ====== */
+@media (max-width: 480px) {
+  .tools__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin: 0 auto;
+    padding: var(--space-3);
+  }
+  .tools__item ul {
+    padding-left: var(--space-1);
+  }
+
+  .tools__item h3,
+  .tools__item li {
+    margin-left: var(--space-3);
   }
 }
 
@@ -328,10 +391,11 @@ contact
   left: var(--space-2);
 }
 
+/* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
   #contact {
     margin: 0 auto;
     min-width: 300px;
-    padding: 0 var(--space-8);
+    padding: 0 var(--space-4);
   }
 }
