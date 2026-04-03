@@ -103,7 +103,7 @@ self
 /* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
   #self {
-    padding: 0 var(--space-4);
+    padding: 0 var(--space-6);
   }
 }
 /* ====== モバイル横: ～480px ====== */
@@ -200,7 +200,12 @@ work
   font-size: var(--fs-2);
   line-height: 1.6;
 }
-
+.works-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
 .works__content img {
   object-position: center;
   object-fit: cover;
@@ -212,11 +217,14 @@ work
   aspect-ratio: 550 / 300;
   width: 100%;
 }
-.works__img img {
+.works-img img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.5s ease, opacity 0.4s ease;
 }
 .works__content span {
   display: block;
@@ -264,7 +272,7 @@ work
     display: flex;
     grid-template-columns: none;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
   .works__intro {
     position: inherit;
@@ -283,7 +291,6 @@ work
 
   /* --- PC right  --- */
   .works__gallery {
-    /* padding-left: var(--space-6); */
     margin-left: 0;
     margin-top: var(--space-5);
   }
@@ -291,24 +298,35 @@ work
     max-height: 300px;
   }
   .works__card {
-    /* left: 0; */
     padding-right: var(--space-3);
   }
-  /* .works__card ul {
-    flex-direction: column;
-  } */
 }
 
 /* ====== モバイル横: ～480px ====== */
 @media (max-width: 480px) {
+  .works__inner {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0 var(--space-2);
+  }
   .works__title br {
     display: block;
   }
   .works__gallery {
     gap: var(--space-4);
     margin: 0 auto;
+    margin-left: 0;
   }
-
+  .works__card ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 4px 2px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
   .works__thumb {
     margin: 0 var(--space-2);
   }
@@ -322,27 +340,23 @@ work
   .works__thumb {
     margin: 0 var(--space-2);
   }
-  .works-img {
+  .works__img {
     width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
     border-radius: 12px;
   }
 
-  .works-img img {
+  .works__img img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
   }
 
-  .works__card {
-    margin: 0;
-    padding: 0;
-  }
   .works__card ul {
     display: grid;
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: 80px 1px;
     gap: 4px 2px;
     padding: 0;
     margin: 0;
