@@ -148,6 +148,9 @@ work
   margin: 0;
   white-space: nowrap;
 }
+.works__title br {
+  display: none;
+}
 
 .works__lead {
   display: block;
@@ -190,24 +193,30 @@ work
   margin-bottom: var(--space-6);
 }
 
-.works__content a {
+.works__thumb {
   display: block;
   text-decoration: none;
   color: inherit;
-
   font-size: var(--fs-2);
   line-height: 1.6;
 }
+
 .works__content img {
-  display: block;
   object-position: center;
   object-fit: cover;
+  overflow: hidden;
   margin: 0 auto;
   box-shadow: var(--shadow-md);
   border-radius: var(--radius-lg);
   transition: transform 0.5s ease, opacity 0.4s ease;
-  aspect-ratio: 600 / 360;
-  max-height: 500px;
+  aspect-ratio: 550 / 300;
+  width: 100%;
+}
+.works__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 .works__content span {
   display: block;
@@ -267,6 +276,10 @@ work
   .works__lead {
     padding-right: 0;
   }
+  .works__span {
+    display: block;
+    margin-bottom: var(--space-6);
+  }
 
   /* --- PC right  --- */
   .works__gallery {
@@ -288,23 +301,55 @@ work
 
 /* ====== モバイル横: ～480px ====== */
 @media (max-width: 480px) {
-  .works__content {
-    /* padding: 0 30px; */
+  .works__title br {
+    display: block;
   }
-}
-.works__gallery {
-  gap: var(--space-4);
-  margin: 0 50px;
-}
-.works__content img {
-  max-height: 220px;
+  .works__gallery {
+    gap: var(--space-4);
+    margin: 0 auto;
+  }
+
+  .works__thumb {
+    margin: 0 var(--space-2);
+  }
 }
 
 /* ====== モバイル縦: ～360px ====== */
 @media (max-width: 360px) {
   .works__gallery {
-    gap: var(--space-4);
-    margin: 0 50px;
+    gap: var(--space-3);
+  }
+  .works__thumb {
+    margin: 0 var(--space-2);
+  }
+  .works-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .works-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .works__card {
+    margin: 0;
+    padding: 0;
+  }
+  .works__card ul {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 4px 2px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .works__card li {
+    padding: 4px;
   }
 }
 
