@@ -244,13 +244,13 @@ img {
   }
 
   section {
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-8);
   }
 
   .container {
     margin-inline: auto;
     width: min(100% - (var(--gutter) * 2), var(--container));
-    /* padding: 0; */
+    padding: 0;
   }
 
   h1,

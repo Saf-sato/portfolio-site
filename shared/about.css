@@ -171,3 +171,30 @@ about
     letter-spacing: var(--fs-1);
   }
 }
+
+/* ====== モバイル横: ～480px ====== */
+@media (max-width: 480px) {
+  .about__name {
+    padding: 0 var(--space-2);
+  }
+  .about__p {
+    padding: 0 var(--space-2);
+  }
+  .about__i {
+    margin: 0 0;
+    margin-top: var(--space-9);
+    margin-bottom: var(--space-7);
+  }
+  .about__list {
+    gap: var(--space-2);
+    padding: 0 var(--space-2);
+  }
+  .about__overlay {
+    font-weight: 200;
+    letter-spacing: 0.3em;
+    padding: var(--space-1);
+  }
+}
+/* ====== モバイル縦: ～360px ====== */
+@media (max-width: 360px) {
+}
