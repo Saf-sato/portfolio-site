@@ -315,6 +315,7 @@ work
   .works__gallery {
     margin: 0 auto;
     margin-left: 0;
+    gap: var(--space-8);
   }
   .works__card li {
     padding: 4px;
@@ -417,7 +418,7 @@ Tools
     flex-direction: column;
     gap: var(--space-3);
     margin: 0 auto;
-    padding: var(--space-3);
+    padding: var(--space-5);
   }
   .tools__item ul {
     padding-left: var(--space-1);

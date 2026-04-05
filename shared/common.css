@@ -504,6 +504,8 @@ footer
   position: relative;
   background: var(--color-footer);
   top: var(--space-9);
+  margin: 0 auto;
+  padding: 0 var(--space-8);
 }
 .footer__inner {
   display: flex;
@@ -515,10 +517,12 @@ footer
   font-weight: 600;
   letter-spacing: 0.04em;
 }
+/* ====== タブレット: ～768px ====== */
 @media (max-width: 768px) {
+}
+/* ====== モバイル横: ～480px ====== */
+@media (max-width: 480px) {
   #footer {
-    margin: 0 auto;
-    min-width: 300px;
-    padding: 0 var(--space-8);
+    padding: 0 var(--space-3);
   }
 }
