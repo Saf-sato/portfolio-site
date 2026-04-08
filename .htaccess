@@ -1,9 +1,1 @@
 RewriteEngine On
-
-# www → non-www に統一
-RewriteCond %{HTTP_HOST} ^www\.fumi-sato\.com$ [NC]
-RewriteRule ^(.*)$ https://fumi-sato.com/$1 [R=301,L]
-
-# http → https に統一
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://fumi-sato.com/$1 [R=301,L]
