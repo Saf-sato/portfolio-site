@@ -1,1 +1,9 @@
 RewriteEngine On
+
+# http → https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://fumi-sato.com/$1 [R=301,L]
+
+# www → non-www
+RewriteCond %{HTTP_HOST} ^www\.fumi-sato\.com$ [NC]
+RewriteRule ^(.*)$ https://fumi-sato.com/$1 [R=301,L]

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- OG -->
+    <meta property="og:title" content="Fumi Sato Portfolio | Web制作" />
+    <meta
+      property="og:description"
+      content="宮城県仙台市でフロントエンドを中心にWeb制作を行っています。HTML・CSS・JavaScriptによるサイト制作を承ります"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://fumi-sato.com/img/ogp.jpg" />
+    <meta property="og:url" content="https://fumi-sato.com/" />
+    <meta property="og:site_name" content="Fumi Sato Portfolio" />
+    <meta property="og:locale" content="ja_JP" />
+    <link rel="canonical" href="https://fumi-sato.com/" />
+    <meta name="robots" content="index,follow" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/img/favicon-48.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/shared/reset.css" />
+    <link rel="stylesheet" href="/shared/common.css" />
+    <link rel="stylesheet" href="/shared/style.css" />
+    <link rel="stylesheet" href="/shared/about.css" />
+    <link rel="stylesheet" href="/shared/work.css" />
+
+    <title>Fumi Sato Portfolio | Web制作</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__name" href="/index.html">Fumi Sato</a>
+        <button class="menu-btn" id="menuButton" aria-expanded="false">
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <div id="overlay" class="overlay" hidden></div>
+    <nav id="siteDrawer" class="drawer" aria-hidden="true" hidden>
+      <div class="drawer__title">Menu</div>
+      <ul class="drawer__nav">
+        <li><a href="/index.html">Top</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/index.html#works">Works</a></li>
+        <li><a href="/index.html#tools">Tools</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+        <li>
+          <a
+            href="https://github.com/Saf-sato/portfolio-site"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+      <div class="drawer__meta">
+        <a href="mailto:fumisato.web@gmail.com">fumisato.web@gmail.com</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- work -->
+      <div class="container">
+        <section id="work" data-animate="fade">
+          <h2 class="work__title">Webバナー</h2>
+          <div class="work__wrapper">
+            <div class="work__left">
+              <span></span>
+              <img
+                src="/img/works/banner-2_1.jpg"
+                style="border: 0.2px solid;solid;border-radius: inherit;"
+                alt="banner-1"
+              />
+            </div>
+            <div class="work__right">
+              <dl>
+                <dt>概要</dt>
+                <dd>架空旅行サイトバナー</dd>
+                <dt>ターゲット</dt>
+                <dd>GW中の旅行計画中のユーザー<br /></dd>
+                <dt>デザイン意図</dt>
+                <dd>こどもの日<br />鯉のぼりの躍動感</dd>
+              </dl>
+              <p class="work__category">Design</p>
+              <span></span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="comment" data-animate="fade">
+        <div class="container">
+          <div class="comment__wrapper">
+            <ul class="comment__list">
+              <li>販促設計</li>
+              <li>デザイン展開</li>
+              <li>画像調整</li>
+            </ul>
+            <h3>架空旅行サイトバナー制作 <br />Fish航空</h3>
+            <br />
+            <p class="comment__txt">
+              GW中の旅行プランを探しているユーザー向けにバナー制作しました。
+              <br />
+              <br />
+              お子様がいるご家庭＝こどもの日＝鯉のぼり<br />
+              家庭の主役であるお子様が「ワクワクしながら」「遠くの目的地に向かう」「躍動感ある」<br />
+              小さな冒険の出発をイメージしました。
+              <br />
+              <br />
+
+              フリー画像の画像処理：Lightroom <br />
+              画像、文字配置、色調整：Photoshop <br /><br />
+              制作時間：2時間
+            </p>
+          </div>
+        </div>
+      </section>
+      <span style="display: none"></span>
+      <a href="/index.html#works" class="back__button">
+        <span class="back__button__arrow" aria-hidden="true">←</span>
+        <span>もどる</span>
+      </a>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container footer__inner">
+        <a class="header__name" href="#">Top</a>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/shared/main.js"></script>
+  </body>
+</html>
