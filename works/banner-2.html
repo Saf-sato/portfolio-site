@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head prefix="og: http://ogp.me">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WM855E2CB6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WM855E2CB6");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -94,7 +108,7 @@
               <span></span>
               <img
                 src="/img/works/banner-2_1.jpg"
-                style="border: 0.2px solid;solid;border-radius: inherit;"
+                style="border: 0.2px solid; border-radius: inherit"
                 alt="banner-1"
               />
             </div>
@@ -144,6 +158,25 @@
           </div>
         </div>
       </section>
+
+      <section class="image">
+        <div class="container">
+          <div class="image__list">
+            <ul>
+              <li data-animate="fade">
+                <img src="/img/works/banner-2_1.jpg" alt="banner-2" />
+              </li>
+              <li data-animate="fade">
+                <img src="/img/works/banner-2_2.jpg" alt="banner-3" />
+              </li>
+              <li data-animate="fade">
+                <img src="/img/works/banner-2_4.jpg" alt="banner-5" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <span style="display: none"></span>
       <a href="/index.html#works" class="back__button">
         <span class="back__button__arrow" aria-hidden="true">←</span>
