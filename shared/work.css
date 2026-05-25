@@ -23,9 +23,11 @@ work --wrapper
 
 .work__left img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
   margin-inline: auto;
   box-shadow: none;
-  max-height: 400px;
   border-radius: var(--radius-md);
   object-fit: cover;
 }
